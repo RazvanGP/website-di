@@ -19,13 +19,8 @@ export default function Home() {
   }, []);
 
   return (
-    <motion.main
-      className="homeBackground h-[200vh]"
-      initial={{ opacity: 1 }}
-      animate={{ opacity: scrollPosition > 100 ? 0 : 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="flex justify-between items-center ">
+    <main className="">
+      {/* <div className="flex justify-between items-center ">
         <img src="/logo.png" alt="" width={200} className="p-10" />
         <div className="flex justify-between px-20 w-full">
           <Link href="/about">About</Link>
@@ -33,7 +28,24 @@ export default function Home() {
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/contact">Contact</Link>
         </div>
+      </div> */}
+
+      <div className="h-[200vh] relative overflow-hidden">
+        <motion.img
+          src="/bg-1.png"
+          className="fixed top-0 left-0 bg-cyan-500 h-full w-full"
+          animate={{ opacity: 1 - (0.1 * scrollPosition) / 100 }}
+        ></motion.img>
+
+        <motion.img
+          src="/bg-2.png"
+          className="fixed top-0 left-0 bg-red-500 h-full w-full"
+          animate={{ opacity: (0.1 * scrollPosition) / 100 }}
+        ></motion.img>
       </div>
-    </motion.main>
+      <div className="fixed top-0 h-full w-full flex justify-center items-center">
+        <h1 className="font-10 font-extrabold text-5xl">MAIN PAGE</h1>
+      </div>
+    </main>
   );
 }

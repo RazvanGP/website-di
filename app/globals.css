@@ -16,7 +16,7 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
-.homeBackground {
+/* .homeBackground {
   background-image: url("/bg-1.png");
   background-repeat: no-repeat;
-}
+} */
