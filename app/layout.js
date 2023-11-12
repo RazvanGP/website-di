@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Backgound from "./components/Backgound";
 import Nav from "./components/Nav";
+import Lines from "./components/Lines";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className + " " + "no-scrollbar"}>
         <Nav />
         <main className="relative overflow-hidden pt-[20vh] ">
+          <Lines />
           <Backgound />
           <section>{children}</section>
         </main>

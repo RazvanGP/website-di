@@ -19,42 +19,45 @@ const Backgound = () => {
   });
 
   return (
-    <div className="h-full select-none">
-      <div>
+    <div className="select-none">
+      <div className="opacity-80">
         <motion.img
           src="/bg-1.png"
           className="fixed bottom-0 left-0 w-full"
         ></motion.img>
 
-        <motion.img
-          src="/bg-2.png"
-          className="fixed bottom-0 left-0 w-full"
-          initial="hidden"
-          animate={{ opacity: opacityBg2 }}
-          transition={{ type: "spring", stiffness: 100 }}
-        ></motion.img>
+        <div className="opacity-50">
+          <motion.img
+            src="/bg-2.png"
+            className="fixed bottom-0 left-0 w-full"
+            initial="hidden"
+            animate={{ opacity: opacityBg2 }}
+            exit={{ opacity: 0 }}
+            transition={{ type: "spring", stiffness: 100 }}
+          ></motion.img>
 
-        <motion.img
-          src="/bg-3.png"
-          className="fixed bottom-0 left-0 w-full"
-          initial="hidden"
-          animate={{ opacity: opacityBg3 }}
-          transition={{ type: "spring", stiffness: 100 }}
-        ></motion.img>
+          <motion.img
+            src="/bg-3.png"
+            className="fixed bottom-0 left-0 w-full"
+            initial="hidden"
+            animate={{ opacity: opacityBg3 }}
+            transition={{ type: "spring", stiffness: 100 }}
+          ></motion.img>
 
-        <motion.img
-          src="/bg-4.png"
-          className="fixed bottom-0 left-0 w-full"
-          initial="hidden"
-          animate={{ opacity: opacityBg4 }}
-          transition={{ type: "spring", stiffness: 100 }}
-        ></motion.img>
+          <motion.img
+            src="/bg-4.png"
+            className="fixed bottom-0 left-0 w-full"
+            initial="hidden"
+            animate={{ opacity: opacityBg4 }}
+            transition={{ type: "spring", stiffness: 100 }}
+          ></motion.img>
+        </div>
       </div>
-      <div className="font-titling-gothic text-accent-blue font-black text-2xl italic  fixed right-10 flex flex-col items-end gap-5 opacity-20">
-        <p className=" text-right">
-          <span>&quot;Let&apos;s build together...&quot;</span>
+      <div className="font-titling-gothic text-primary-blue font-black md:text-2xl italic fixed right-10 flex flex-col items-end opacity-20">
+        <p className="">Let&apos;s build together...</p>
+        <p className="text-6xl md:text-8xl text-accent-blue">
+          {Math.round(progress * 100) + "%"}
         </p>
-        <p className="text-8xl ">{Math.round(progress * 100) + "%"}</p>
       </div>
     </div>
   );
