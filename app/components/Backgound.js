@@ -1,22 +1,22 @@
 "use client";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { useState, useContext, useEffect } from "react";
+import { Context } from "./Context";
 
 const Backgound = () => {
-  const { scrollYProgress } = useScroll();
+  const { scrollYValue } = useContext(Context);
 
   const [opacityBg2, setOpacityBg2] = useState(0);
   const [opacityBg3, setOpacityBg3] = useState(0);
   const [opacityBg4, setOpacityBg4] = useState(0);
   const [progress, setProgress] = useState(0);
 
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    setOpacityBg2(latest < 0.25 ? 0 : latest);
-    setOpacityBg3(latest < 0.5 ? 0 : latest);
-    setOpacityBg4(latest < 0.75 ? 0 : latest);
-    setProgress(latest);
-    // console.log(latest);
-  });
+  useEffect(() => {
+    setOpacityBg2(scrollYValue < 0.25 ? 0 : scrollYValue);
+    setOpacityBg3(scrollYValue < 0.5 ? 0 : scrollYValue);
+    setOpacityBg4(scrollYValue < 0.75 ? 0 : scrollYValue);
+    setProgress(scrollYValue);
+  }, [scrollYValue]);
 
   return (
     <div className="select-none">

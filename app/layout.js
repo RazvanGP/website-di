@@ -1,3 +1,4 @@
+import Provider from "./components/Context";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Backgound from "./components/Backgound";
@@ -14,14 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth snap-mandatory snap-y">
-      <body className={inter.className + " " + "no-scrollbar"}>
-        <Lines />
-        <Backgound />
-        <Nav />
-        <main>
-          <section>{children}</section>
-        </main>
-      </body>
+      <Provider>
+        <body className={inter.className + " " + "no-scrollbar"}>
+          <Lines />
+          <Backgound />
+          <Nav />
+          <main>{children}</main>
+        </body>
+      </Provider>
     </html>
   );
 }
