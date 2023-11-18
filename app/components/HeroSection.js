@@ -1,19 +1,29 @@
-"use client";
-import { motion } from "framer-motion";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useRef } from "react";
 
-const HeroSection = () => {
+const TestHorizontalCarousel = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
   return (
-    <motion.section
-      className="font-titling-gothic text-primary-blue font-bold py-5 md:py-28 px-10 bg-gradient-to-r from-[rgba(0,110,255,0.1)]  to-opacity-0 w-full md:w-3/4 "
-      // initial={{ y: -1000, opacity: 0 }}
-      // animate={{ y: 0, opacity: 1 }}
-      // transition={{ duration: 0.8, delay: 0.2 }}
-    >
-      <h1 className="text-xl text-accent-red">SHIP DESIGN ENGINEERING</h1>
-
-      <h2 className="text-6xl font-black">WHERE VISION SETS SAIL</h2>
-    </motion.section>
+    <section className="relative h-[300vh] ">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex gap-4">
+          <div className="h-[450px] min-w-max  font-bold pt-28 font-primary">
+            <h1 className="text-3xl text-accent-red font-bold tracking-widest sticky left-0 translate-x-0">
+              SHIP DESIGN ENGINEERING
+            </h1>
+            <p className="text-[10rem] text-primary-blue font-black opacity-10">
+              WHERE VISION SETS SAIL
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 
-export default HeroSection;
+export default TestHorizontalCarousel;

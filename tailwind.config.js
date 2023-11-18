@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "titling-gothic": ["TitlingGothicFBCond-Ext", "sans-serif"],
+        primary: ["TitlingGothicFBCond-Ext", "sans-serif"],
+        secondary: ["Didact Gothic", "sans-serif"],
       },
       colors: {
         "primary-blue": "#283260",

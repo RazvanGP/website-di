@@ -1,11 +1,8 @@
 import Provider from "./components/Context";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Backgound from "./components/Backgound";
 import Nav from "./components/Nav";
 import Lines from "./components/Lines";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Ship Design Engineering",
@@ -16,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth snap-mandatory snap-y">
       <Provider>
-        <body className={inter.className + " " + "no-scrollbar"}>
+        <body className={`no-scrollbar`}>
           <Lines />
           <Backgound />
           <Nav />

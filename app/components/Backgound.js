@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState, useContext, useEffect } from "react";
 import { Context } from "./Context";
+import { IoIosArrowDropdown, IoIosArrowDropleft } from "react-icons/io";
 
 const Backgound = () => {
   const { scrollYValue } = useContext(Context);
@@ -20,7 +21,7 @@ const Backgound = () => {
 
   return (
     <div className="select-none">
-      <div className="opacity-80">
+      <div className="opacity-40">
         <motion.img
           src="/bg-1.png"
           className="fixed bottom-0 left-0 w-full"
@@ -58,6 +59,11 @@ const Backgound = () => {
         <p className="text-6xl md:text-8xl text-accent-blue">
           {Math.round(progress * 100) + "%"}
         </p>
+        {scrollYValue <= 0.95 ? (
+          <IoIosArrowDropdown size={100} color="#2E84FF" />
+        ) : (
+          <IoIosArrowDropleft size={100} color="#2E84FF" />
+        )}
       </div>
     </div>
   );
