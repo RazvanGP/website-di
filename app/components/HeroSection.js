@@ -1,18 +1,23 @@
-import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { Context } from "./Context";
+import { useContext, useState } from "react";
+const HeroSection = () => {
+  const [scrollYSection, setScrollYSection] = useState(0);
+  const { scrollY } = useScroll();
 
-const TestHorizontalCarousel = () => {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrollYSection(latest);
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
   return (
-    <section className="relative h-[300vh] ">
+    <section className="relative h-[320vh] ">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
-          <div className="h-[450px] min-w-max  font-bold pt-28 font-primary">
+        <motion.div
+          className="flex gap-4"
+          animate={{ x: -scrollYSection }}
+          transition={{ type: "spring", stiffness: 30 }}
+        >
+          <div className="h-[450px] min-w-max  font-bold pt-28 font-primary pl-10">
             <h1 className="text-3xl text-accent-red font-bold tracking-widest sticky left-0 translate-x-0">
               SHIP DESIGN ENGINEERING
             </h1>
@@ -26,4 +31,4 @@ const TestHorizontalCarousel = () => {
   );
 };
 
-export default TestHorizontalCarousel;
+export default HeroSection;

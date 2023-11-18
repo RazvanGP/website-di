@@ -26,8 +26,10 @@ export default function Home() {
 
   return (
     <div>
-      <HeroSection />
-      <HeroSection />
+      <AnimatePresence>
+        <HeroSection />
+        <section className="min-h-screen bg-red-200"></section>c
+      </AnimatePresence>
     </div>
   );
 }

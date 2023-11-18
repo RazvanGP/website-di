@@ -60,7 +60,17 @@ const Backgound = () => {
           {Math.round(progress * 100) + "%"}
         </p>
         {scrollYValue <= 0.95 ? (
-          <IoIosArrowDropdown size={100} color="#2E84FF" />
+          <motion.div
+            animate={{ scale: [1, 1.1] }}
+            transition={{
+              repeat: Infinity,
+              ease: "linear",
+              repeatType: "reverse",
+              duration: 1,
+            }}
+          >
+            <IoIosArrowDropdown size={100} color="#2E84FF" />
+          </motion.div>
         ) : (
           <IoIosArrowDropleft size={100} color="#2E84FF" />
         )}
