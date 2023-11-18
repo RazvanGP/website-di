@@ -13,12 +13,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth snap-mandatory snap-y">
       <body className={inter.className + " " + "no-scrollbar"}>
+        <Lines />
+        <Backgound />
         <Nav />
-        <main className="relative overflow-hidden pt-[20vh] ">
-          <Lines />
-          <Backgound />
+        <main>
           <section>{children}</section>
         </main>
       </body>
