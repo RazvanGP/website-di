@@ -9,7 +9,7 @@ const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   const variants = {
-    open1: { rotate: 45, y: "12px" },
+    open1: { rotate: 45, y: "10px" },
     open2: { rotate: -45 },
     close: { rotate: 0 },
   };
@@ -20,7 +20,7 @@ const Nav = () => {
         <img src="/logo.png" alt="" width={150} />
       </Link>
 
-      <div className="hidden md:flex justify-between pr-5 gap-5 ">
+      <nav className="hidden md:flex justify-between pr-5 gap-5 ">
         <Link
           href="/"
           className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300"
@@ -51,11 +51,11 @@ const Nav = () => {
         >
           CONTACT
         </Link>
-      </div>
+      </nav>
 
       <motion.button
         whileHover={{ scale: 1.2 }}
-        className="md:hidden flex flex-col gap-2 z-10 group"
+        className="md:hidden flex flex-col items-end gap-2 z-10 group"
         onClick={() => {
           setShowMobileNav(!showMobileNav);
         }}
@@ -64,7 +64,7 @@ const Nav = () => {
           variants={variants}
           initial={"close"}
           animate={showMobileNav ? "open1" : "close"}
-          className={`min-w-[50px] bg-silver-grey min-h-[5px] ${
+          className={`min-w-[30px] bg-silver-grey min-h-[2px] ${
             showMobileNav
               ? "group-hover:bg-accent-red"
               : "group-hover:bg-accent-blue"
@@ -72,7 +72,7 @@ const Nav = () => {
         ></motion.div>
         {!showMobileNav && (
           <div
-            className={`min-w-[50px] bg-silver-grey min-h-[5px] ${
+            className={`min-w-[20px] bg-silver-grey min-h-[2px] ${
               showMobileNav
                 ? "group-hover:bg-accent-red"
                 : "group-hover:bg-accent-blue"
@@ -83,13 +83,14 @@ const Nav = () => {
           variants={variants}
           initial={"close"}
           animate={showMobileNav ? "open2" : "close"}
-          className={`min-w-[50px] bg-silver-grey min-h-[5px] ${
+          className={`min-w-[30px] bg-silver-grey min-h-[2px] ${
             showMobileNav
               ? "group-hover:bg-accent-red"
               : "group-hover:bg-accent-blue"
           }`}
         ></motion.div>
       </motion.button>
+
       {showMobileNav && <MobileNav setShowMobileNav={setShowMobileNav} />}
     </nav>
   );
