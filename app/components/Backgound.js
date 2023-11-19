@@ -54,7 +54,7 @@ const Backgound = () => {
           ></motion.img>
         </div>
       </div>
-      <div className="font-titling-gothic text-primary-blue font-black md:text-2xl italic fixed right-10 flex flex-col items-end opacity-20 pt-[20vh]">
+      <div className="font-titling-gothic text-primary-blue font-black md:text-2xl italic fixed right-10 flex flex-col items-end opacity-20 pt-[20vh] sm:px-5">
         <p className="">Let&apos;s build together...</p>
         <p className="text-6xl md:text-8xl text-accent-blue">
           {Math.round(progress * 100) + "%"}
