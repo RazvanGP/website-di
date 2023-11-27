@@ -3,7 +3,7 @@ import BulletPoint from "./BulletPoint";
 
 const WelcomeSection = () => {
   return (
-    <div className="font-secondary text-text-grey text-2xl py-5 md:py-28 px-10 min-h-screen w-full flex flex-col justify-center gap-6 md:gap-16 max-w-xs md:max-w-2xl lg:max-w-7xl">
+    <div className="font-secondary text-text-grey text-2xl min-h-screen w-full flex flex-col justify-center gap-6 md:gap-16 max-w-xs md:max-w-2xl lg:max-w-7xl">
       <h2 className=" font-primary font-extrabold text-primary-blue  uppercase text-2xl md:text-4xl tracking-[12px] ">
         welcome
       </h2>
