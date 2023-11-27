@@ -61,6 +61,7 @@ const Backgound = () => {
         </p>
         {scrollYValue <= 0.95 ? (
           <motion.div
+            className="flex flex-col items-end"
             animate={{ scale: [1, 1.1] }}
             transition={{
               repeat: Infinity,
@@ -69,10 +70,11 @@ const Backgound = () => {
               duration: 1,
             }}
           >
-            <IoIosArrowDropdown size={100} color="#2E84FF" />
+            <IoIosArrowDropdown size={50} color="#2E84FF" />
+            <p className="text-xs">SCROLL DOWN</p>
           </motion.div>
         ) : (
-          <IoIosArrowDropleft size={100} color="#2E84FF" />
+          <IoIosArrowDropleft size={50} color="#2E84FF" />
         )}
       </div>
     </div>

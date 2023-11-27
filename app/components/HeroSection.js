@@ -2,6 +2,7 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { Context } from "./Context";
 import { useContext, useState } from "react";
 import Link from "next/link";
+import { PiQuotesThin } from "react-icons/pi";
 
 const HeroSection = () => {
   const [scrollYSection, setScrollYSection] = useState(0);
@@ -12,23 +13,32 @@ const HeroSection = () => {
   });
 
   return (
-    <section className="relative h-[320vh]">
+    <section className="relative h-[300vh] max-w-xs md:max-w-2xl lg:max-w-7xl">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        {/* bg-gradient-to-t from-[rgba(0,110,255,0.001)] via-[rgba(0,110,255,0.1)] to-[rgba(0,110,255,0.001)] */}
         <div className=" p-10 mt-48 min-w-max font-bold font-primary pl-5 flex flex-col items-start">
-          <h1 className="text-sm sm:text-xl text-accent-red font-extrabold tracking-[5px] sm:tracking-[10px] drop-shadow-xl">
+          <h1 className="text-sm sm:text-xl text-accent-red font-extrabold tracking-[3px] sm:tracking-[10px] drop-shadow-xl">
             SHIP DESIGN ENGINEERING
           </h1>
-          <motion.p
-            className="text-9xl text-primary-blue font-black opacity-10 "
+
+          <motion.div
+            className="flex flex-col"
             animate={{ x: -scrollYSection }}
-            transition={{ type: "spring", stiffness: 30 }}
+            transition={{ type: "spring", stiffness: 40, ease: "easeInOut" }}
           >
-            WHERE VISION SETS SAIL
-          </motion.p>
+            <PiQuotesThin size={75} color="#283260" className="opacity-50" />
+            <p className="text-9xl text-primary-blue font-black opacity-20">
+              WHERE VISION SETS SAIL
+            </p>
+            <PiQuotesThin
+              size={75}
+              color="#283260"
+              className="place-self-end opacity-50"
+            />
+          </motion.div>
+
           <Link
             href="/services"
-            class="mt-24 px-4 py-2 text-primary-blue uppercase bg-transparent border-2 border-primary-blue hover:bg-primary-blue hover:text-white text-md duration-1000"
+            className="px-4 py-2 text-primary-blue uppercase bg-transparent border-2 border-primary-blue hover:bg-primary-blue hover:text-white text-md duration-1000"
           >
             explore our services
           </Link>

@@ -9,9 +9,9 @@ export default function Home() {
   const { scrollYValue } = useContext(Context);
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <HeroSection />
-      <section className="min-h-screen bg-red-200"></section>c
+      <WelcomeSection />
     </div>
   );
 }

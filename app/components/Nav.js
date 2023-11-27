@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import MobileNav from "./MobileNav";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
+  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
   const variants = {
     open1: { rotate: 45, y: "10px" },
@@ -91,7 +92,20 @@ const Nav = () => {
         ></motion.div>
       </motion.button>
 
-      {showMobileNav && <MobileNav setShowMobileNav={setShowMobileNav} />}
+      <AnimatePresence>
+        {showMobileNav && (
+          <motion.div
+            initial={{ scale: 0 }} // Initial state
+            animate={{ scale: 100, transition: { duration: 0.7 } }}
+            exit={{ scale: 0, transition: { duration: 0.7 } }}
+            onAnimationComplete={() => setIsAnimationComplete(true)}
+            className="min-h-[30px] min-w-[30px] fixed top-20 right-10 rounded-full bg-slate-950 opacity-70 backdrop-blur-md"
+          ></motion.div>
+        )}
+        {isAnimationComplete && showMobileNav && (
+          <MobileNav setShowMobileNav={setShowMobileNav} />
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

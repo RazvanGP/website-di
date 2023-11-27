@@ -3,6 +3,7 @@ import "./globals.css";
 import Backgound from "./components/Backgound";
 import Nav from "./components/Nav";
 import Lines from "./components/Lines";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Ship Design Engineering",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
           <Backgound />
           <Nav />
           <main>{children}</main>
+          <Footer />
         </body>
       </Provider>
     </html>
