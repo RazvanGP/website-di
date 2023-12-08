@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth snap-mandatory snap-y">
+    <html lang="en" className="scroll-smooth snap-mandatory snap-y snap-center">
       <Provider>
         <body className={`no-scrollbar`}>
           <Lines />

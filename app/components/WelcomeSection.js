@@ -1,5 +1,6 @@
 import React from "react";
 import BulletPoint from "./BulletPoint";
+import { motion } from "framer-motion";
 
 const WelcomeSection = () => {
   return (
