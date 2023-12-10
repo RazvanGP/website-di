@@ -16,7 +16,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="fixed top-0 flex justify-between items-center w-full z-10 font-titling-gothic text-silver-grey text-sm p-10">
+    <nav className="fixed top-0 flex justify-between items-center w-full z-10 font-titling-gothic text-silver-grey text-sm px-10 py-5">
       <Link href="/" className="">
         <img src="/logo.png" alt="" width={150} />
       </Link>

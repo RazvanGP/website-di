@@ -38,7 +38,7 @@ const HeroSection = () => {
 
           <Link
             href="/services"
-            className="px-4 py-2 text-primary-blue uppercase bg-transparent border-2 border-primary-blue hover:bg-primary-blue hover:text-white text-md duration-1000"
+            className="px-4 py-2 text-primary-blue uppercase bg-transparent border-2 border-primary-blue hover:bg-primary-blue hover:text-white text-md duration-300"
           >
             explore our services
           </Link>
