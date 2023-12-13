@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const WelcomeSection = () => {
   return (
-    <div className="font-secondary text-text-grey text-2xl min-h-screen w-full flex flex-col justify-center gap-6 md:gap-16 max-w-xs md:max-w-2xl lg:max-w-7xl">
+    <div className="font-secondary text-text-grey text-2xl w-full flex flex-col justify-center gap-6 md:gap-16 max-w-xs md:max-w-2xl lg:max-w-5xl py-40">
       <h2 className=" font-primary font-extrabold text-primary-blue  uppercase text-2xl md:text-4xl tracking-[12px] ">
         welcome
       </h2>

@@ -13,7 +13,7 @@ const HeroSection = () => {
   });
 
   return (
-    <section className="relative h-[200vh] max-w-[350px] md:max-w-2xl lg:max-w-7xl">
+    <section className="relative h-[200vh] max-w-[350px] md:max-w-2xl lg:max-w-5xl">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <div className=" p-10 mt-48 min-w-max font-bold font-primary pl-5 flex flex-col items-start">
           <h1 className="text-sm sm:text-xl text-accent-red font-extrabold tracking-[3px] sm:tracking-[10px] drop-shadow-xl">

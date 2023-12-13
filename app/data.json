@@ -5,7 +5,7 @@
     "author": "John 0",
     "position": "Senior Hull Engineer",
     "imgSrc": "",
-    "gender": "male"
+    "gender": "man"
   },
   {
     "id": 1,
@@ -13,7 +13,7 @@
     "author": "John 1",
     "position": "Senior Hull Engineer",
     "imgSrc": "https://images.unsplash.com/photo-1624797432677-6f803a98acb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHx8fDA%3D",
-    "gender": "male"
+    "gender": "man"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "author": "John 2",
     "position": "Senior Hull Engineer",
     "imgSrc": "",
-    "gender": "male"
+    "gender": "man"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@
     "author": "John 3",
     "position": "Senior Hull Engineer",
     "imgSrc": "",
-    "gender": "male"
+    "gender": "man"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "author": "John 4",
     "position": "Senior Hull Engineer",
     "imgSrc": "https://images.unsplash.com/photo-1624797432677-6f803a98acb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHx8fDA%3D",
-    "gender": "male"
+    "gender": "woman"
   },
   {
     "id": 5,
@@ -45,6 +45,6 @@
     "author": "John 5",
     "position": "Senior Hull Engineer",
     "imgSrc": "",
-    "gender": "male"
+    "gender": "woman"
   }
 ]
