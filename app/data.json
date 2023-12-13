@@ -1,50 +1,38 @@
 [
   {
     "id": 0,
-    "textBody": "Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien",
-    "author": "John 0",
-    "position": "Senior Hull Engineer",
-    "imgSrc": "",
-    "gender": "man"
+    "textBody": "\"In my role as Sr. Engineer Hull and Cadmatic Hull Administrator at Scheepswerf Slob (Feadship), I had the pleasure to work on many Yachts with Ionut. I found Ionut to be a friendly, helpful and nice colleague with a good sense of humour. \n    Ionut has a good knowledge of Cadmatic Hull, he is an excellent Engineer that knows how to use the software and utilise its full potential.Ionut is a hard worker and he was of great value to us as an Engineer specialised in Yacht Engineering. Not only is he proficient in Cadmatic Hull but I have also seen him work on Superstructure constructions with Siemens NX. I wish Ionut lots of success in his future endeavours and I can highly recommend him for Engineering services\"",
+    "author": "Frank Leendertsen",
+    "position": "Sr. Engineer Hull / Cadmatic Hull Administrator at Scheepswerf Slob (Feadship)"
   },
   {
     "id": 1,
-    "textBody": "Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien",
-    "author": "John 1",
-    "position": "Senior Hull Engineer",
-    "imgSrc": "https://images.unsplash.com/photo-1624797432677-6f803a98acb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHx8fDA%3D",
-    "gender": "man"
+    "textBody": "\"I worked with Ionut on several mega yacht projects and know him as a, hard working, accurate and professional engineer who is quick to learn and a good team player. \n    I would employ Ionut again should the opportunity arise without a second thought.\"",
+    "author": "Jason Tapsell",
+    "position": "Manager Engineering & Work preparation"
   },
   {
     "id": 2,
-    "textBody": "text body",
+    "textBody": "dustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop pu",
     "author": "John 2",
-    "position": "Senior Hull Engineer",
-    "imgSrc": "",
-    "gender": "man"
+    "position": "Senior Hull Engineer"
   },
   {
     "id": 3,
-    "textBody": "text body",
+    "textBody": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in",
     "author": "John 3",
-    "position": "Senior Hull Engineer",
-    "imgSrc": "",
-    "gender": "man"
+    "position": "Senior Hull Engineer"
   },
   {
     "id": 4,
     "textBody": "Lorem ipsum dolor sit amet elit. Voluptates quamus sed accusantium esse quisquam amet reicien quamus sed accusantium esse quisquam amet reicien",
     "author": "John 4",
-    "position": "Senior Hull Engineer",
-    "imgSrc": "https://images.unsplash.com/photo-1624797432677-6f803a98acb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHx8fDA%3D",
-    "gender": "woman"
+    "position": "Senior Hull Engineer"
   },
   {
     "id": 5,
-    "textBody": "text body",
+    "textBody": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in",
     "author": "John 5",
-    "position": "Senior Hull Engineer",
-    "imgSrc": "",
-    "gender": "woman"
+    "position": "Senior Hull Engineer"
   }
 ]

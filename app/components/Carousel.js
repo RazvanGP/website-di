@@ -10,11 +10,11 @@ const Carousel = ({ handleCardModal }) => {
   return (
     <div className="h-[400px] overflow-hidden flex justify-between items-center">
       <motion.div
+        className={`flex gap-5 `}
         style={{
           x,
           transition: "all 0.5s ease",
         }}
-        className="flex gap-5"
       >
         {data.map((card, cardId) => {
           return (
