@@ -1,8 +1,15 @@
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useMotionValueEvent,
+  useInView,
+  useAnimation,
+} from "framer-motion";
 import { Context } from "./Context";
-import { useContext, useState } from "react";
+import { useContext, useState, useRef } from "react";
 import Link from "next/link";
 import { PiQuotesThin } from "react-icons/pi";
+import Reveal from "./Reveal";
 
 const HeroSection = () => {
   const [scrollYSection, setScrollYSection] = useState(0);
@@ -13,35 +20,35 @@ const HeroSection = () => {
   });
 
   return (
-    <section className="relative h-[200vh] max-w-[350px] md:max-w-2xl lg:max-w-5xl">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className=" p-10 mt-48 min-w-max font-bold font-primary pl-5 flex flex-col items-start">
+    <section className="h-screen py-[75px] relative max-w-[350px] md:max-w-2xl lg:max-w-5xl">
+      <div className="h-screen flex items-center overflow-hidden">
+        <div className=" p-10 min-w-max font-bold font-primary pl-5 flex flex-col items-start gap-10">
           <h1 className="text-sm sm:text-xl text-accent-red font-extrabold tracking-[3px] sm:tracking-[10px] drop-shadow-xl">
             SHIP DESIGN ENGINEERING
           </h1>
 
-          <motion.div
-            className="flex flex-col"
-            animate={{ x: -scrollYSection }}
-            transition={{ type: "spring", damping: 15, stiffness: 50 }}
-          >
-            <PiQuotesThin size={75} color="#283260" className="opacity-50" />
-            <p className="text-9xl text-primary-blue font-black opacity-20">
-              WHERE VISION SETS SAIL
-            </p>
-            <PiQuotesThin
-              size={75}
-              color="#283260"
-              className="place-self-end opacity-50"
-            />
-          </motion.div>
+          <Reveal delay={0.5}>
+            <div className="flex flex-col">
+              <PiQuotesThin color="#283260" className="w-[50px] h-[50px]" />
+              <p className="text-4xl sm:text-7xl lg:text-8xl text-primary-blue font-black flex flex-col">
+                <span>WHERE VISION</span>
+                <span className="text-end">SETS SAIL</span>
+              </p>
+              <PiQuotesThin
+                color="#283260"
+                className="w-[50px] h-[50px] self-end"
+              />
+            </div>
+          </Reveal>
 
-          <Link
-            href="/services"
-            className="px-4 py-2 text-primary-blue uppercase bg-transparent border-2 border-primary-blue hover:bg-primary-blue hover:text-white text-md duration-300"
-          >
-            explore our services
-          </Link>
+          <Reveal delay={0.75}>
+            <Link
+              href="/services"
+              className="px-4 py-2 text-primary-blue uppercase bg-transparent border-2 border-primary-blue hover:bg-primary-blue hover:text-white text-md duration-300"
+            >
+              explore our services
+            </Link>
+          </Reveal>
         </div>
       </div>
     </section>

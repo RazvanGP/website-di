@@ -16,7 +16,7 @@ const Testimonials = () => {
 
   const { scrollYProgress } = useScroll();
 
-  const xScale = useTransform(scrollYProgress, [0.7, 1], ["0%", "110%"]);
+  const xScale = useTransform(scrollYProgress, [0.7, 1], ["20%", "110%"]);
 
   return (
     <section
