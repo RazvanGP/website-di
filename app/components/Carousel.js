@@ -18,18 +18,16 @@ const Carousel = ({ handleCardModal }) => {
       >
         {data.map((card, cardId) => {
           return (
-            <div>
-              <Card
-                key={cardId}
-                cardId={card.id}
-                author={card.author}
-                position={card.position}
-                textBody={card.textBody}
-                imgSrc={card.imgSrc}
-                gender={card.gender}
-                handleCardModal={handleCardModal}
-              />
-            </div>
+            <Card
+              key={cardId}
+              cardId={card.id}
+              author={card.author}
+              position={card.position}
+              textBody={card.textBody}
+              imgSrc={card.imgSrc}
+              gender={card.gender}
+              handleCardModal={handleCardModal}
+            />
           );
         })}
       </motion.div>
