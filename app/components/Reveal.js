@@ -12,10 +12,6 @@ const Reveal = ({ children, delay }) => {
 
   useEffect(() => {
     isInView ? mainControls.start("visible") : mainControls.start("hidden");
-
-    if (isInView) {
-      console.log("in view");
-    }
   }, [isInView]);
 
   return (

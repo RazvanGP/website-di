@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import CardModal from "./CardModal";
 import Carousel from "./Carousel";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -16,7 +16,7 @@ const Testimonials = () => {
 
   const { scrollYProgress } = useScroll();
 
-  const xScale = useTransform(scrollYProgress, [0.7, 1], ["20%", "110%"]);
+  const xScale = useTransform(scrollYProgress, [0.25, 1], ["10%", "100%"]);
 
   return (
     <section

@@ -5,7 +5,10 @@ import Reveal from "./Reveal";
 
 const WelcomeSection = () => {
   return (
-    <section className="h-screen font-secondary text-text-grey text-2xl w-full flex flex-col justify-center gap-6 md:gap-16 max-w-xs md:max-w-2xl lg:max-w-5xl">
+    <section
+      className="
+    h-screen py-[75px] relative max-w-[350px] md:max-w-2xl lg:max-w-5xl flex flex-col justify-center items-start gap-10 font-secondary text-text-grey text-2xl"
+    >
       <h2 className=" font-primary font-extrabold text-primary-blue  uppercase text-2xl md:text-4xl tracking-[12px] ">
         welcome
       </h2>

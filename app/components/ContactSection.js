@@ -17,9 +17,11 @@ const ContactSection = () => {
 
       {/*  */}
       <p className="font-semibold">
-        Whether you're embarking on a new project, seeking innovative design
-        solutions, or simply have questions about our services,&nbsp;
-        <span className="text-accent-blue ">we're here to assist you.</span>
+        Whether you&apos;re embarking on a new project, seeking innovative
+        design solutions, or simply have questions about our services,&nbsp;
+        <span className="text-accent-blue ">
+          we&apos;re here to assist you.
+        </span>
       </p>
 
       <div className="text-lg text-primary-blue font-bold">
