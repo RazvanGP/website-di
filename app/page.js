@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection";
 import WelcomeSection from "./components/WelcomeSection";
 import Testimonials from "./components/Testimonials";
 import Reveal from "./components/Reveal";
+import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   const { scrollYValue } = useContext(Context);
@@ -21,6 +22,9 @@ export default function Home() {
       </Reveal>
       <Reveal delay={0.25}>
         <Testimonials />
+      </Reveal>
+      <Reveal delay={0.25}>
+        <ContactSection />
       </Reveal>
     </motion.div>
   );
