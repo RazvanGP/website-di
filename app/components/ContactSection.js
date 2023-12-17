@@ -31,13 +31,13 @@ const ContactSection = () => {
               <td className="w-10 ">
                 <PiPhoneCallFill size={25} />
               </td>
-              <td>+31 6 481 248 88</td>
+              <td>+31 6 48 12 47 88</td>
             </tr>
             <tr>
               <td className="w-10 h-10">
                 <FaWhatsappSquare size={25} />
               </td>
-              <td>+31 6 481 248 88</td>
+              <td>+31 6 48 12 47 88</td>
             </tr>
             <tr>
               <td>
