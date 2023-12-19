@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Carousel = ({ handleCardModal }) => {
   return (
     <motion.div
-      className="h-[400px] overflow-x-auto overflow-y-hidden flex items-center gap-5 scroll-smooth snap-x snap-mandatory no-scrollbar"
+      className="h-[400px] overflow-scroll overflow-y-hidden flex items-center gap-5 scroll-smooth snap-x snap-mandatory no-scrollbar"
       style={{
         transition: "all 0.5s ease",
       }}
