@@ -22,26 +22,24 @@ const Testimonials = () => {
 
   return (
     <section
-      className="relative h-[300vh] max-w-[350px] md:max-w-2xl lg:max-w-5xl "
+      className="h-screen py-[75px] relative max-w-[350px] md:max-w-2xl lg:max-w-5xl flex flex-col justify-center"
       // ref={targetRef}
     >
-      <p className="sticky top-[15%] sm:top-[25%] lg:w-[80%] font-semibold font-secondary text-2xl">
+      <p className="sm:top-[25%] lg:w-[80%] font-semibold font-secondary text-2xl text-text-grey">
         <span className="text-accent-blue">Dive into the feedback below</span>
         &nbsp; to explore how our solutions in the marine industry have
         empowered us with confidence and expertise.&nbsp;
       </p>
-      <div
-        className={`sticky top-1/3 flex flex-col items-center overflow-hidden`}
-      >
+      <div className={`flex flex-col justify-center`}>
         <Carousel handleCardModal={handleCardModal} />
-        <motion.span
-          className={`w-full h-[5px] bg-gradient-to-r from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(46,132,255,1)] `}
-          style={{
-            scaleX: xScale,
-            transition: "all 0.5s ease",
-          }}
-        ></motion.span>
       </div>
+      <motion.p
+        className={`w-full h-[5px] bg-gradient-to-r from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(46,132,255,1)]`}
+        style={{
+          scaleX: xScale,
+          transition: "all 0.5s ease",
+        }}
+      ></motion.p>
 
       {showCardModal && (
         <CardModal handleCardModal={handleCardModal} cardId={selectedCard} />
