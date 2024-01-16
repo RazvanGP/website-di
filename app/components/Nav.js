@@ -3,11 +3,28 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import MobileNav from "./MobileNav";
-import { AnimatePresence, motion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
 
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+  const [isNavHidden, setIsNavHidden] = useState(false);
+
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setIsNavHidden(true);
+    } else {
+      setIsNavHidden(false);
+    }
+  });
 
   const variants = {
     open1: { rotate: 45, y: "10px" },
@@ -16,7 +33,15 @@ const Nav = () => {
   };
 
   return (
-    <nav className="fixed top-0 flex justify-between items-center w-full z-10 font-titling-gothic text-silver-grey text-sm px-10 py-5">
+    <motion.nav
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={isNavHidden ? "hidden" : "visible"}
+      transition={{ duration: 0.35, ease: "easeInOut" }}
+      className="sticky top-0 flex justify-between items-center w-full z-10 font-titling-gothic text-silver-grey text-sm px-10 py-5"
+    >
       <Link href="/" className="">
         <img src="/logo.png" alt="" width={150} />
       </Link>
@@ -106,7 +131,7 @@ const Nav = () => {
           <MobileNav setShowMobileNav={setShowMobileNav} />
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 };
 
