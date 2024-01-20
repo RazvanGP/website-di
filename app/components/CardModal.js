@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "../data.json";
+import feedbacks from "../utils/feedback.json";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
@@ -26,16 +26,16 @@ const CardModal = ({ handleCardModal, cardId }) => {
             />
           </button>
           <p className="py-3 text-silver-grey italic max-h-[300px] overflow-auto">
-            {data[currentCard].textBody}
+            {feedbacks[currentCard].textBody}
           </p>
 
           <div className="w-full lg:w-[80%] flex justify-end items-center sm:self-end">
             <div className="flex flex-col items-end pb-5">
               <h2 className="text-accent-blue text-lg font-bold">
-                {data[currentCard].author}
+                {feedbacks[currentCard].author}
               </h2>
               <h3 className=" text-slate-300 text-end">
-                {data[currentCard].position}
+                {feedbacks[currentCard].position}
               </h3>
             </div>
 
@@ -66,7 +66,7 @@ const CardModal = ({ handleCardModal, cardId }) => {
           />
         </button>
         <div className="py-4 flex justify-center gap-3 w-full bg-200-red">
-          {data.map((card, cardIdx) => {
+          {feedbacks.map((card, cardIdx) => {
             return (
               <div
                 key={"circle" + (cardId + 1)}

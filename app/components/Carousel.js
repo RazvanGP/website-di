@@ -1,6 +1,6 @@
 import { Context } from "./Context";
 import { useContext, useEffect, useState, useRef } from "react";
-import data from "../data.json";
+import feedbacks from "../utils/feedback.json";
 import Card from "./Card";
 import { motion } from "framer-motion";
 
@@ -15,7 +15,7 @@ const Carousel = ({ handleCardModal }) => {
       // drag="x"
       // dragConstraints={{ left: 0, right: 0 }}
     >
-      {data.map((card, cardIdx) => {
+      {feedbacks.map((card, cardIdx) => {
         return (
           <Card
             key={cardIdx}
