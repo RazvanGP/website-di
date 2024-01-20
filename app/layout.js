@@ -12,13 +12,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth ">
+    <html lang="en" className="scroll-smooth no-scrollbar">
       <Provider>
-        <body className={`no-scrollbar`}>
+        <body className="relative min-h-screen flex flex-col">
           <Lines />
           <Backgound />
           <Nav />
-          <main>{children}</main>
+          {children}
           <Footer />
         </body>
       </Provider>

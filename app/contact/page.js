@@ -48,7 +48,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="h-[85vh] w-screen relative lg:max-w-5xl flex justify-evenly items-end md:items-center xl:items-start md:pt-48">
+    <main className="flex-1 relative lg:max-w-5xl flex justify-evenly items-center xl:items-start xl:pt-20">
       <form
         onSubmit={handleSubmit}
         id="contact=form"
@@ -169,7 +169,7 @@ const ContactPage = () => {
           </div>
         </div>
       </Reveal>
-    </div>
+    </main>
   );
 };
 

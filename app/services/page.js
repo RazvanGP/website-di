@@ -1,7 +1,7 @@
 import React from "react";
 
 const ServicesPage = () => {
-  return <div>ServicesPage</div>;
+  return <main className="flex-1">ServicesPage</main>;
 };
 
 export default ServicesPage;
