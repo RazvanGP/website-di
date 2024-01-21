@@ -27,7 +27,7 @@ const PortfolioPage = () => {
               />
               {/* border style:
               border-r-2 border-b-2 border-[rgb(46,132,255,0.9)] */}
-              <div className="h-[200px] max-h-[200px] flex flex-col justify-between gap-5 bg-slate-50 bg-opacity-50 backdrop-blur-[2px] p-4 relative -top-12 -right-5 z-10 border-r-2 border-b-2 border-red-500 ">
+              <div className="h-[200px] max-h-[200px] flex flex-col justify-between gap-5 bg-slate-50 bg-opacity-50 backdrop-blur-[2px] p-4 relative -top-12 -right-5 border-r-2 border-b-2 border-red-500 ">
                 <h1 className=" text-primary-blue text-xl font-extrabold">
                   {project.title}
                 </h1>
