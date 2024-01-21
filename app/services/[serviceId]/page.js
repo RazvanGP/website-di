@@ -29,13 +29,15 @@ const ServiceDetails = ({ params }) => {
               </div>
 
               <ul className="pl-5">
-                {services[serviceId].subList[index].map((sublistItem) => {
-                  return (
-                    <li>
-                      <div className="flex gap-5">- {sublistItem}</div>
-                    </li>
-                  );
-                })}
+                {services[serviceId].subList[index].map(
+                  (sublistItem, index) => {
+                    return (
+                      <li key={index}>
+                        <div className="flex gap-5">- {sublistItem}</div>
+                      </li>
+                    );
+                  }
+                )}
               </ul>
             </div>
           );
