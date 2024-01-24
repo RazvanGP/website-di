@@ -4,7 +4,6 @@ import BulletPoint from "../components/BulletPoint";
 import services from "../utils/services.json";
 import Link from "next/link";
 import Image from "next/image";
-import Reveal from "../components/Reveal";
 
 const ServicesPage = () => {
   return (

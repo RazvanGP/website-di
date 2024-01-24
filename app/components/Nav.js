@@ -9,6 +9,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
+import useWindowSize from "./useWindowSize";
 
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -19,7 +20,8 @@ const Nav = () => {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
-    if (latest > previous && latest > 150) {
+
+    if (latest > previous && latest > 150 && windowSize.width < 780) {
       setIsNavHidden(true);
     } else {
       setIsNavHidden(false);
@@ -31,6 +33,8 @@ const Nav = () => {
     open2: { rotate: -45 },
     close: { rotate: 0 },
   };
+
+  const windowSize = useWindowSize();
 
   return (
     <motion.nav
