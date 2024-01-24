@@ -34,28 +34,24 @@
     "imgSrc": "/service1.jpg",
     "title": "Detail Engineering",
     "description": "Meticulous and comprehensive engineering solutions ensuring precision and detail in every aspect of ship design.",
-    "serviceDetailsAccent": "We offer comprehensive engineering",
-    "serviceDetails": " modeling services tailored to meet the unique requirements of modern ship design. Our team of skilled engineers employs cutting-edge technology and industry-best practices to deliver precise and efficient solutions. From concept to completion, we are committed to optimizing the performance, safety, and sustainability of maritime vessels.",
-    "list": [
-      "Hull Form Modelling",
-      "Structure modelling",
-      "Machinery and Systems Integration"
-    ],
+    "serviceDetailsAccent": "We are specialized in meticulously translating conceptual ship designs into precise construction documentation, ",
+    "serviceDetails": "ensuring strict adherence to industry standards. Our comprehensive package includes class drawings for classification approval, construction drawings for efficient building processes, and arrangement drawings for optimal spatial organization. This commitment to detail promotes efficiency and upholds the highest quality standards in shipbuilding.",
+    "list": ["Class Drawings", "Construction Drawings", "Arrangement Drawings"],
     "subList": [
       [
-        "3D modeling of ship hulls using advanced software",
-        "Structural integrity assessments",
-        "Hydrodynamic analysis for optimal performance"
+        "Detailed drawings meeting classification society standards",
+        "Compliance with regulatory classification requirements",
+        "Documentation for vessel classification approval"
       ],
       [
-        "3d modelling of the struture",
-        "Finite Element Analysis (FEA) for structural strength and stability",
-        "Material selection and analysis for optimal performance"
+        "Elaborate drawings for ship construction",
+        "2D and 3D drafting using CAD software",
+        "Adherence to regulatory and industry construction standards"
       ],
       [
-        "Integration of propulsion systems.",
-        "Modeling of engine rooms and machinery spaces.",
-        "Systems compatibility analysis."
+        "Comprehensive layout plans for ship components",
+        "Integration of various ship systems in the overall arrangement",
+        "Detailed spatial organization for optimal functionality"
       ]
     ]
   },
@@ -64,28 +60,28 @@
     "imgSrc": "/service2.jpeg",
     "title": "Detail Engineering Lead",
     "description": "Leadership in detail engineering and robust support throughout the shipbuilding process, ensuring projects meet the highest standards.",
-    "serviceDetailsAccent": "We offer comprehensive engineering",
-    "serviceDetails": " modeling services tailored to meet the unique requirements of modern ship design. Our team of skilled engineers employs cutting-edge technology and industry-best practices to deliver precise and efficient solutions. From concept to completion, we are committed to optimizing the performance, safety, and sustainability of maritime vessels.",
+    "serviceDetailsAccent": "Our detail engineering lead services ensure seamless collaboration",
+    "serviceDetails": " among diverse teams for efficient ship design. Acting as coordinators, we oversee the entire design process, fostering communication, and ensuring timely delivery of high-quality ship designs.",
     "list": [
-      "Hull Form Modelling",
-      "Structure modelling",
-      "Machinery and Systems Integration"
+      "Team Coordination",
+      "Design Process Oversight",
+      "Client Communication"
     ],
     "subList": [
       [
-        "3D modeling of ship hulls using advanced software",
-        "Structural integrity assessments",
-        "Hydrodynamic analysis for optimal performance"
+        "Project management for streamlined workflows",
+        "Facilitating communication among various design teams",
+        "Regular team meetings to address concerns and updates"
       ],
       [
-        "3d modelling of the struture",
-        "Finite Element Analysis (FEA) for structural strength and stability",
-        "Material selection and analysis for optimal performance"
+        "Monitoring and guiding each stage of the ship design process",
+        "Identifying and resolving design conflicts",
+        "Ensuring adherence to timelines and milestones"
       ],
       [
-        "Integration of propulsion systems.",
-        "Modeling of engine rooms and machinery spaces.",
-        "Systems compatibility analysis."
+        "Regular updates and progress reports to clients",
+        "Addressing client queries and incorporating feedback",
+        "Collaborative decision-making for design modifications"
       ]
     ]
   },
@@ -94,28 +90,28 @@
     "imgSrc": "/service3.jpg",
     "title": "Consultancy Services",
     "description": "Insightful consultancy services, providing expert advice to guide clients through the complexities of shipbuilding, offering solutions tailored to their unique needs.",
-    "serviceDetailsAccent": "We offer comprehensive engineering",
-    "serviceDetails": " modeling services tailored to meet the unique requirements of modern ship design. Our team of skilled engineers employs cutting-edge technology and industry-best practices to deliver precise and efficient solutions. From concept to completion, we are committed to optimizing the performance, safety, and sustainability of maritime vessels.",
+    "serviceDetailsAccent": "Our consultancy services provide valuable insights and expert advice,",
+    "serviceDetails": " guiding clients through ship design challenges. Whether conceptualizing new ideas or troubleshooting existing designs, our experienced consultants offer strategic perspectives to enhance project outcomes.",
     "list": [
-      "Hull Form Modelling",
-      "Structure modelling",
-      "Machinery and Systems Integration"
+      "Conceptual Design Evaluation",
+      "Regulatory Compliance Guidance",
+      "Performance Optimization"
     ],
     "subList": [
       [
-        "3D modeling of ship hulls using advanced software",
-        "Structural integrity assessments",
-        "Hydrodynamic analysis for optimal performance"
+        "Assessing feasibility and viability of ship design concepts",
+        "Providing recommendations for improvements",
+        "Identifying potential challenges and proposing solutions"
       ],
       [
-        "3d modelling of the struture",
-        "Finite Element Analysis (FEA) for structural strength and stability",
-        "Material selection and analysis for optimal performance"
+        "Navigating maritime regulations and standards",
+        "Offering compliance strategies for design modifications",
+        "Ensuring designs align with international maritime laws"
       ],
       [
-        "Integration of propulsion systems.",
-        "Modeling of engine rooms and machinery spaces.",
-        "Systems compatibility analysis."
+        "Analyzing and enhancing ship performance metrics",
+        "Recommending improvements for fuel efficiency",
+        "Implementing design modifications for enhanced sustainability"
       ]
     ]
   },
@@ -124,28 +120,28 @@
     "imgSrc": "/service4.jpg",
     "title": "Software Expertise",
     "description": "Proficient use of industry-leading software tools such as Nupas, Cadmatic, Rhino, and Autocad to enhance the efficiency and quality of our design services.",
-    "serviceDetailsAccent": "We offer comprehensive engineering",
-    "serviceDetails": " modeling services tailored to meet the unique requirements of modern ship design. Our team of skilled engineers employs cutting-edge technology and industry-best practices to deliver precise and efficient solutions. From concept to completion, we are committed to optimizing the performance, safety, and sustainability of maritime vessels.",
+    "serviceDetailsAccent": "Harnessing the power of industry-leading software tools",
+    "serviceDetails": " such as Nupas, Cadmatic, Rhino, and Autocad, we elevate the efficiency and quality of our design services, providing tailored solutions for modern ship design challenges.",
     "list": [
-      "Hull Form Modelling",
-      "Structure modelling",
-      "Machinery and Systems Integration"
+      "3D Modeling with Rhino",
+      "Structural Modeling with Cadmatic/Nupas",
+      "Drafting and Construction Plans with Cadmatic/Nupas and Autocad"
     ],
     "subList": [
       [
-        "3D modeling of ship hulls using advanced software",
-        "Structural integrity assessments",
-        "Hydrodynamic analysis for optimal performance"
+        "Precision in ship hull modeling",
+        "Surface modeling for intricate geometries",
+        "Seamless integration of Rhino into the design workflow"
       ],
       [
-        "3d modelling of the struture",
-        "Finite Element Analysis (FEA) for structural strength and stability",
-        "Material selection and analysis for optimal performance"
+        "Detailed structural modeling using Cadmatic/Nupas",
+        "Finite Element Analysis (FEA) for structural integrity",
+        "Optimization of ship structures for strength and stability"
       ],
       [
-        "Integration of propulsion systems.",
-        "Modeling of engine rooms and machinery spaces.",
-        "Systems compatibility analysis."
+        "Comprehensive 2D and 3D drafting using Cadmatic/Nupas and Autocad",
+        "Expertise in detailing construction plans",
+        "Seamless integration of drafting tools into the overall design process"
       ]
     ]
   }

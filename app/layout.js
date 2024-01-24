@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth no-scrollbar">
       <Provider>
-        <body className="relative min-h-screen flex flex-col">
+        <body className="relative min-h-screen flex flex-col ">
           <Lines />
           <Backgound />
           <Nav />
