@@ -24,13 +24,13 @@ const Backgound = () => {
       <div className="opacity-40">
         <motion.img
           src="/bg-1.png"
-          className="fixed bottom-0 left-0 w-full"
+          className="fixed bottom-0 right-0 w-full max-w-6xl"
         ></motion.img>
 
         <div className="opacity-50">
           <motion.img
             src="/bg-2.png"
-            className="fixed bottom-0 left-0 w-full"
+            className="fixed bottom-0 right-0 w-full max-w-6xl"
             initial="hidden"
             animate={{ opacity: opacityBg2 }}
             exit={{ opacity: 0 }}
@@ -39,7 +39,7 @@ const Backgound = () => {
 
           <motion.img
             src="/bg-3.png"
-            className="fixed bottom-0 left-0 w-full"
+            className="fixed bottom-0 right-0 w-full max-w-6xl"
             initial="hidden"
             animate={{ opacity: opacityBg3 }}
             transition={{ type: "spring", stiffness: 100 }}
@@ -47,7 +47,7 @@ const Backgound = () => {
 
           <motion.img
             src="/bg-4.png"
-            className="fixed bottom-0 left-0 w-full"
+            className="fixed bottom-0 right-0 w-full max-w-6xl"
             initial="hidden"
             animate={{ opacity: opacityBg4 }}
             transition={{ type: "spring", stiffness: 100 }}

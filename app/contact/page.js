@@ -48,16 +48,16 @@ const ContactPage = () => {
   };
 
   return (
-    <main className="flex-1 relative lg:max-w-5xl flex justify-evenly items-center xl:items-start xl:pt-20">
+    <main className="flex-1 relative max-w-6xl self-center flex items-center gap-20">
       <form
         onSubmit={handleSubmit}
         id="contact=form"
-        className="text-primary-blue flex flex-col gap-5 justify-center items-start "
+        className="text-primary-blue flex flex-col gap-5 justify-center items-start"
       >
         <Reveal>
           <input
             className={
-              "border-[1px] border-primary-blue p-2 transition-all duration-500"
+              "border-[1px] border-primary-blue p-2 transition-all duration-500 xl:w-[300px]"
             }
             type="text"
             data-validation="text"
@@ -73,7 +73,7 @@ const ContactPage = () => {
         </Reveal>
         <Reveal delay={0.2}>
           <input
-            className="border-[1px] border-primary-blue p-2 transition-all duration-500"
+            className="border-[1px] border-primary-blue p-2 transition-all duration-500 xl:w-[300px]"
             type="text"
             data-validation="email"
             id="email"
@@ -88,7 +88,7 @@ const ContactPage = () => {
         </Reveal>
         <Reveal delay={0.4}>
           <input
-            className="border-[1px] border-primary-blue p-2 transition-all duration-500"
+            className="border-[1px] border-primary-blue p-2 transition-all duration-500 xl:w-[300px]"
             type="text"
             data-validation="text"
             id="phone"
@@ -102,7 +102,7 @@ const ContactPage = () => {
         </Reveal>
         <Reveal delay={0.6}>
           <textarea
-            className="border-[1px] border-primary-blue p-2 transition-all duration-500 resize-none"
+            className="border-[1px] border-primary-blue p-2 transition-all duration-500 resize-none xl:w-[500px]"
             name="message"
             id="message"
             data-validation="text"
