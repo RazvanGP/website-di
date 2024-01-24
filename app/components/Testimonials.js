@@ -20,6 +20,13 @@ const Testimonials = () => {
 
   const xScale = useTransform(scrollYProgress, [0.4, 0.8], ["10%", "100%"]);
 
+  //temporary solution
+  useEffect(() => {
+    showCardModal
+      ? document.body.classList.add("overflow-hidden")
+      : document.body.classList.remove("overflow-hidden");
+  }, [showCardModal]);
+
   return (
     <section
       className="h-screen py-[75px] relative max-w-[350px] md:max-w-2xl lg:max-w-5xl flex flex-col justify-center"

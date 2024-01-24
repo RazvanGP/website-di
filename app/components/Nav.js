@@ -3,17 +3,11 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import MobileNav from "./MobileNav";
-import {
-  AnimatePresence,
-  motion,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import useWindowSize from "./useWindowSize";
 
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
-  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const [isNavHidden, setIsNavHidden] = useState(false);
 
   const { scrollY } = useScroll();
@@ -35,6 +29,13 @@ const Nav = () => {
   };
 
   const windowSize = useWindowSize();
+
+  //temporary solution
+  useEffect(() => {
+    showMobileNav
+      ? document.body.classList.add("overflow-hidden")
+      : document.body.classList.remove("overflow-hidden");
+  }, [showMobileNav]);
 
   return (
     <motion.nav
@@ -121,20 +122,7 @@ const Nav = () => {
         ></motion.div>
       </motion.button>
 
-      <AnimatePresence>
-        {showMobileNav && (
-          <motion.div
-            initial={{ scale: 0 }} // Initial state
-            animate={{ scale: 100, transition: { duration: 0.7 } }}
-            exit={{ scale: 0, transition: { duration: 0.7 } }}
-            onAnimationComplete={() => setIsAnimationComplete(true)}
-            className="min-h-[30px] min-w-[30px] fixed top-20 right-10 rounded-full bg-slate-950 opacity-70 backdrop-blur-md"
-          ></motion.div>
-        )}
-        {isAnimationComplete && showMobileNav && (
-          <MobileNav setShowMobileNav={setShowMobileNav} />
-        )}
-      </AnimatePresence>
+      {showMobileNav && <MobileNav setShowMobileNav={setShowMobileNav} />}
     </motion.nav>
   );
 };

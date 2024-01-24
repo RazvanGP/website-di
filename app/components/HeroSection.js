@@ -20,7 +20,7 @@ const HeroSection = () => {
   });
 
   return (
-    <section className="h-screen py-[75px] relative max-w-[350px] md:max-w-2xl lg:max-w-5xl ">
+    <section className="h-screen py-[75px] relative max-w-[350px] md:max-w-2xl lg:max-w-5xl">
       <div className="h-screen flex items-center overflow-hidden">
         <div className=" p-10 min-w-max font-bold font-primary pl-5 flex flex-col items-start gap-10">
           <h1 className="text-sm md:text-lg text-accent-red font-extrabold tracking-[3px] md:tracking-[10px] drop-shadow-xl">
