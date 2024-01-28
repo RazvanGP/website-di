@@ -45,7 +45,7 @@ const Nav = () => {
       }}
       animate={isNavHidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="sticky top-0 flex justify-between items-center w-full max-w-6xl self-center z-10 font-titling-gothic text-silver-grey text-sm px-10 py-5 backdrop-blur-sm"
+      className="sticky top-0 flex justify-between items-center w-full max-w-6xl self-center z-10 font-titling-gothic text-primary-blue text-sm px-10 py-5 backdrop-blur-sm"
     >
       <Link href="/" className="">
         <img src="/logo.png" alt="" width={100} />
