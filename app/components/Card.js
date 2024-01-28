@@ -2,9 +2,9 @@ import { FaQuoteLeft } from "react-icons/fa6";
 
 const Card = ({ author, position, textBody, handleCardModal, cardId }) => {
   return (
-    <div className="min-w-[320px] min-h-[310px] sm:min-w-[500px] sm:max-h-[250px] lg:min-w-[700px] lg:min-h-[350px] bg-primary-blue overflow-hidden flex rounded-xl font-secondary sm:drop-shadow-lg backdrop justify-evenly lg:justify-between snap-center">
-      <div className="p-4 lg:p-10 flex flex-col items-end justify-around relative w-[300px] lg:w-[450px]">
-        <p className="text-silver-grey italic relative line-clamp-3 sm:line-clamp-4">
+    <div className="grabbing min-h-full max-h-[500px] bg-primary-blue flex rounded-xl font-secondary sm:drop-shadow-lg drop-shadow-2xl">
+      <div className="p-4 lg:p-10 flex flex-col items-end justify-around relative gap-4">
+        <p className="text-silver-grey italic relative line-clamp-3 md:line-clamp-4">
           {textBody}
         </p>
         <button
@@ -26,7 +26,7 @@ const Card = ({ author, position, textBody, handleCardModal, cardId }) => {
         />
       </div>
       <img
-        className={`hidden sm:block grayscale object-cover w-[200px] py-10 lg:mr-10 opacity-20 `}
+        className={`hidden md:block grayscale object-cover md:w-[100px] w-[200px] py-10 lg:mr-10 opacity-20 `}
         src={"/man-illustration.png"}
       ></img>
     </div>
