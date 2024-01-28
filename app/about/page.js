@@ -26,7 +26,7 @@ const AboutPage = () => {
           <span className="text-accent-blue ">
             Highlighting my commitment to quality and expertise,
           </span>
-          &nbsp;is not just a promise, it's a certified reality.
+          &nbsp;is not just a promise, it a certified reality.
         </p>
 
         <div className="flex flex-col gap-2 pl-4 font-secondary text-text-grey text-xl font-semibold">
@@ -40,8 +40,8 @@ const AboutPage = () => {
             <p className="italic text-xl text-gray-500 pl-5 font-light">
               Issued: July 2022 <br />
               Institution: [Institution] <br />
-              Description: Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s
+              Description: Lorem Ipsum has been the industry standard dummy text
+              ever since the 1500s
             </p>
           </div>
           <div>
@@ -52,8 +52,8 @@ const AboutPage = () => {
             <p className="italic text-xl text-gray-500 pl-5 font-light">
               Issued: July 2019 <br />
               Institution: [Institution] <br />
-              Description: Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s
+              Description: Lorem Ipsum has been the industry standard dummy text
+              ever since the 1500s
             </p>
           </div>
           <div>
@@ -64,8 +64,8 @@ const AboutPage = () => {
             <p className="italic text-xl text-gray-500 pl-5 font-light">
               Issued: July 2017 <br />
               Institution: [Institution] <br />
-              Description: Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s
+              Description: Lorem Ipsum has been the industry standard dummy text
+              ever since the 1500s
             </p>
           </div>
           <div>
@@ -76,8 +76,8 @@ const AboutPage = () => {
             <p className="italic text-xl text-gray-500 pl-5 font-light">
               Issued: July 2011 <br />
               Institution: [Institution] <br />
-              Description: Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s
+              Description: Lorem Ipsum has been the industry standard dummy text
+              ever since the 1500s
             </p>
           </div>
         </div>
