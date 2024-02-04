@@ -2,7 +2,7 @@ import { FaQuoteLeft } from "react-icons/fa6";
 
 const Card = ({ author, position, textBody, handleCardModal, cardId }) => {
   return (
-    <div className="grabbing min-h-full max-h-[500px] bg-primary-blue flex rounded-xl font-secondary sm:drop-shadow-lg drop-shadow-2xl">
+    <div className="grabbing min-h-full max-h-[500px] bg-primary-blue flex justify-evenly rounded-xl font-secondary sm:drop-shadow-lg drop-shadow-2xl">
       <div className="p-4 lg:p-10 flex flex-col items-end justify-around relative gap-4">
         <p className="text-silver-grey italic relative line-clamp-3 md:line-clamp-4">
           {textBody}
@@ -26,7 +26,7 @@ const Card = ({ author, position, textBody, handleCardModal, cardId }) => {
         />
       </div>
       <img
-        className={`hidden md:block grayscale object-cover md:w-[100px] w-[200px] py-10 lg:mr-10 opacity-20 `}
+        className={`hidden lg:block grayscale object-contain w-[150px] opacity-20`}
         src={"/man-illustration.png"}
       ></img>
     </div>
