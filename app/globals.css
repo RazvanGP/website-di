@@ -37,14 +37,14 @@ body {
 }
 
 .swiper-pagination {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .swiper-button-next {
   margin-right: 50px;
   padding: 40px;
   border-radius: 100%;
-  background-color: rgba(245, 245, 245, 0.4);
+  background-color: rgba(245, 245, 245, 0.2);
 }
 
 .swiper-button-next:hover {
@@ -56,7 +56,7 @@ body {
   margin-left: 50px;
   padding: 40px;
   border-radius: 100%;
-  background-color: rgba(245, 245, 245, 0.4);
+  background-color: rgba(245, 245, 245, 0.2);
 }
 
 .swiper-button-prev:hover {
