@@ -12,19 +12,11 @@ export default function Home() {
   const { scrollYValue } = useContext(Context);
 
   return (
-    <motion.main className="flex flex-col justify-center items-center gap-10 snap-y snap-mandatory scroll-smooth ">
-      <Reveal delay={0.25}>
-        <HeroSection />
-      </Reveal>
-      <Reveal delay={0.25}>
-        <WelcomeSection />
-      </Reveal>
-      <Reveal delay={0.25}>
-        <Testimonials />
-      </Reveal>
-      <Reveal delay={0.25}>
-        <ContactSection />
-      </Reveal>
+    <motion.main className="flex flex-col justify-center items-center gap-10">
+      <HeroSection />
+      <WelcomeSection />
+      <Testimonials />
+      <ContactSection />
     </motion.main>
   );
 }
