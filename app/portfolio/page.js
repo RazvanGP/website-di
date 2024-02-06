@@ -4,10 +4,12 @@ import projects from "../utils/projects.json";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../components/Reveal";
+import Lines from "../components/Lines";
 
 const PortfolioPage = () => {
   return (
     <main className="p-10 relative flex-1 flex flex-col justify-center items-center max-w-6xl self-center">
+      <Lines />
       <Reveal>
         <p className="font-semibold pb-10 font-secondary text-text-grey text-2xl self-start">
           <span className="text-accent-blue ">

@@ -6,7 +6,7 @@ import Reveal from "./Reveal";
 const WelcomeSection = () => {
   return (
     <Reveal>
-      <section className="home-section text-2xl h-[80vh] flex flex-col justify-center items-start gap-10">
+      <section className="home-section text-2xl flex flex-col justify-center items-start gap-10">
         <Reveal delay={0.2}>
           <h2 className=" font-primary font-extrabold text-primary-blue  uppercase text-2xl md:text-4xl tracking-[12px] ">
             welcome

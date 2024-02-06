@@ -5,9 +5,11 @@ import services from "../utils/services.json";
 import Link from "next/link";
 import Image from "next/image";
 import Reveal from "../components/Reveal";
+import Lines from "../components/Lines";
 const ServicesPage = () => {
   return (
     <main className="p-10 relative flex-1 flex flex-col justify-center items-center max-w-6xl self-center">
+      <Lines />
       <Reveal>
         <p className="font-semibold pb-10 font-secondary text-text-grey text-2xl self-start">
           <span className="text-accent-blue ">

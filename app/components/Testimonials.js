@@ -32,7 +32,7 @@ const Testimonials = () => {
 
   return (
     <Reveal>
-      <section className="h-screen home-section flex flex-col justify-center gap-10">
+      <section className="home-section flex flex-col justify-center gap-10">
         <Reveal delay={0.2}>
           <p className="font-semibold font-secondary text-2xl text-text-grey ">
             <span className="text-accent-blue">

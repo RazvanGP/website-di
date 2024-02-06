@@ -7,12 +7,14 @@ import WelcomeSection from "./components/WelcomeSection";
 import Testimonials from "./components/Testimonials";
 import Reveal from "./components/Reveal";
 import ContactSection from "./components/ContactSection";
+import Lines from "./components/Lines";
 
 export default function Home() {
   const { scrollYValue } = useContext(Context);
 
   return (
-    <motion.main className="flex flex-col justify-center items-center gap-10">
+    <motion.main className="flex flex-col justify-arround items-center gap-48 pb-10">
+      <Lines />
       <HeroSection />
       <WelcomeSection />
       <Testimonials />

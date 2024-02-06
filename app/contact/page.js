@@ -7,6 +7,7 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa6";
 import { useState } from "react";
+import Lines from "../components/Lines";
 
 const ContactPage = () => {
   const initialFormData = {
@@ -49,6 +50,7 @@ const ContactPage = () => {
 
   return (
     <main className="flex-1 relative max-w-6xl self-center flex items-center gap-20">
+      <Lines />
       <form
         onSubmit={handleSubmit}
         id="contact=form"

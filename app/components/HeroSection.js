@@ -21,8 +21,8 @@ const HeroSection = () => {
 
   return (
     <Reveal>
-      <section className="home-section h-[80vh] flex items-center ">
-        <div className="h-screen flex items-center overflow-hidden">
+      <section className="home-section h-[80vh] flex items-center">
+        <div className="flex items-center overflow-hidden">
           <div className="p-10 min-w-max font-bold font-primary pl-5 flex flex-col items-start gap-10">
             <Reveal delay={0.2}>
               <h1 className="text-sm md:text-lg text-accent-red font-extrabold tracking-[3px] md:tracking-[10px] drop-shadow-xl">

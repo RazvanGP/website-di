@@ -2,10 +2,12 @@
 import { GiRibbonMedal } from "react-icons/gi";
 import BulletPoint from "../components/BulletPoint";
 import Reveal from "../components/Reveal";
+import Lines from "../components/Lines";
 
 const AboutPage = () => {
   return (
     <main className="p-10 relative flex-1 flex flex-col justify-center items-center max-w-6xl self-center">
+      <Lines />
       <Reveal>
         <p className="font-semibold pb-10 font-secondary text-text-grey text-2xl self-start">
           <span className="text-accent-blue ">

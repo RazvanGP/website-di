@@ -11,7 +11,7 @@ import { FaLinkedin } from "react-icons/fa6";
 const ContactSection = () => {
   return (
     <Reveal>
-      <section className="h-[80vh] home-section flex flex-col justify-center items-start gap-10 font-secondary text-text-grey text-2xl">
+      <section className="home-section flex flex-col justify-center items-start gap-10 font-secondary text-text-grey text-2xl">
         <h2 className=" font-primary font-extrabold text-primary-blue  uppercase text-2xl md:text-4xl tracking-[12px] ">
           Contact
         </h2>
