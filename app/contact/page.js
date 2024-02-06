@@ -71,7 +71,7 @@ const ContactPage = () => {
             }}
           ></input>
         </Reveal>
-        <Reveal delay={0.2}>
+        <Reveal delay={0.15}>
           <input
             className="border-[1px] border-primary-blue p-2 transition-all duration-500 xl:w-[300px]"
             type="text"
@@ -86,7 +86,7 @@ const ContactPage = () => {
             }}
           ></input>
         </Reveal>
-        <Reveal delay={0.4}>
+        <Reveal delay={0.2}>
           <input
             className="border-[1px] border-primary-blue p-2 transition-all duration-500 xl:w-[300px]"
             type="text"
@@ -100,7 +100,7 @@ const ContactPage = () => {
             }}
           ></input>
         </Reveal>
-        <Reveal delay={0.6}>
+        <Reveal delay={0.25}>
           <textarea
             className="border-[1px] border-primary-blue p-2 transition-all duration-500 resize-none xl:w-[500px]"
             name="message"
@@ -116,7 +116,7 @@ const ContactPage = () => {
             }}
           ></textarea>
         </Reveal>
-        <Reveal delay={0.8}>
+        <Reveal delay={0.3}>
           <button
             href="/services"
             className={
@@ -131,7 +131,7 @@ const ContactPage = () => {
         </Reveal>
       </form>
       {/* Contact informations */}
-      <Reveal delay={1}>
+      <Reveal delay={0.25}>
         <div className="hidden md:block text-lg text-primary-blue font-bold">
           <h2 className=" font-primary font-extrabold text-accent-blue  uppercase md:text-2xl tracking-[4px] pb-5">
             get in touch
