@@ -27,8 +27,8 @@ const ServiceDetails = ({ params }) => {
       <ul className="flex flex-col gap-4 text-xl">
         {services[serviceId].list.map((item, index) => {
           return (
-            <Reveal delay={(index + 2) / 10}>
-              <div className="flex flex-col gap-4 pl-4" key={index}>
+            <Reveal delay={(index + 2) / 10} key={index}>
+              <div className="flex flex-col gap-4 pl-4">
                 <div className="flex">
                   <BulletPoint />
                   <span className="ml-4">{item}</span>

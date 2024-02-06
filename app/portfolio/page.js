@@ -23,11 +23,8 @@ const PortfolioPage = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 xl:gap-x-28 gap-y-[350px]  mb-[250px]">
           {projects.map((project, index) => {
             return (
-              <Reveal>
-                <div
-                  key={index}
-                  className="max-w-[300px]  flex flex-col drop-shadow-2xl"
-                >
+              <Reveal key={index}>
+                <div className="max-w-[300px]  flex flex-col drop-shadow-2xl">
                   <div className="relative">
                     <Image
                       src={project.imgSrc}
