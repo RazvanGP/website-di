@@ -6,7 +6,7 @@ const MessageSentDialog = ({ handleSentModal }) => {
           Your message has been successfully sent!
         </p>
         <p className="text-text-grey text-2xl">
-          Thank you for reaching out. I'll be in touch with you shortly.
+          Thank you for reaching out. I&apos;ll be in touch with you shortly.
         </p>
 
         <button
