@@ -7,52 +7,56 @@ import { IoIosArrowDropdown, IoIosArrowDropleft } from "react-icons/io";
 const Backgound = () => {
   const { scrollYValue } = useContext(Context);
 
+  const [opacityBg0, setOpacityBg0] = useState(0);
+  const [opacityBg1, setOpacityBg1] = useState(0);
   const [opacityBg2, setOpacityBg2] = useState(0);
   const [opacityBg3, setOpacityBg3] = useState(0);
   const [opacityBg4, setOpacityBg4] = useState(0);
+  const [opacityBg5, setOpacityBg5] = useState(0);
+  const [opacityBg6, setOpacityBg6] = useState(0);
+  const [opacityBg7, setOpacityBg7] = useState(0);
+  const [opacityBg8, setOpacityBg8] = useState(0);
   const [progress, setProgress] = useState(0);
+  const imgsArr = [
+    opacityBg0,
+    opacityBg1,
+    opacityBg2,
+    opacityBg3,
+    opacityBg4,
+    opacityBg5,
+    opacityBg6,
+    opacityBg7,
+    opacityBg8,
+  ];
 
   useEffect(() => {
-    setOpacityBg2(scrollYValue < 0.25 ? 0 : scrollYValue);
-    setOpacityBg3(scrollYValue < 0.5 ? 0 : scrollYValue);
-    setOpacityBg4(scrollYValue < 0.75 ? 0 : scrollYValue);
+    setOpacityBg0(0.2 + scrollYValue);
+    setOpacityBg1(scrollYValue < 0.1 ? 0 : scrollYValue);
+    setOpacityBg2(scrollYValue < 0.2 ? 0 : scrollYValue);
+    setOpacityBg3(scrollYValue < 0.3 ? 0 : scrollYValue);
+    setOpacityBg4(scrollYValue < 0.4 ? 0 : scrollYValue);
+    setOpacityBg5(scrollYValue < 0.5 ? 0 : scrollYValue - 0.5);
+    setOpacityBg6(scrollYValue < 0.6 ? 0 : scrollYValue - 0.5);
+    setOpacityBg7(scrollYValue < 0.7 ? 0 : scrollYValue - 0.5);
+    setOpacityBg8(scrollYValue < 0.8 ? 0 : scrollYValue - 0.5);
     setProgress(scrollYValue);
   }, [scrollYValue]);
 
   return (
     <div className="select-none">
-      <div className="opacity-40">
-        <motion.img
-          src="/bg-1.png"
-          className="fixed bottom-0 right-0 w-full max-w-6xl"
-        ></motion.img>
-
-        <div className="opacity-50">
-          <motion.img
-            src="/bg-2.png"
-            className="fixed bottom-0 right-0 w-full max-w-6xl"
-            initial="hidden"
-            animate={{ opacity: opacityBg2 }}
-            exit={{ opacity: 0 }}
-            transition={{ type: "spring", stiffness: 100 }}
-          ></motion.img>
-
-          <motion.img
-            src="/bg-3.png"
-            className="fixed bottom-0 right-0 w-full max-w-6xl"
-            initial="hidden"
-            animate={{ opacity: opacityBg3 }}
-            transition={{ type: "spring", stiffness: 100 }}
-          ></motion.img>
-
-          <motion.img
-            src="/bg-4.png"
-            className="fixed bottom-0 right-0 w-full max-w-6xl"
-            initial="hidden"
-            animate={{ opacity: opacityBg4 }}
-            transition={{ type: "spring", stiffness: 100 }}
-          ></motion.img>
-        </div>
+      <div className="opacity-90">
+        {imgsArr.map((img, index) => {
+          return (
+            <motion.img
+              src={`/bg-${index}.png`}
+              className="fixed bottom-0 right-0 w-full max-w-6xl"
+              initial="hidden"
+              animate={{ opacity: img }}
+              exit={{ opacity: 0 }}
+              transition={{ type: "spring", stiffness: 100, damping: 50 }}
+            ></motion.img>
+          );
+        })}
       </div>
       <div className="font-titling-gothic text-primary-blue font-black md:text-2xl italic fixed right-10 flex flex-col items-end opacity-20 pt-[20vh] sm:px-5">
         <p className="">Let&apos;s build together...</p>
