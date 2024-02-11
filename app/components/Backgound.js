@@ -48,6 +48,7 @@ const Backgound = () => {
         {imgsArr.map((img, index) => {
           return (
             <motion.img
+              key={`bg${index}`}
               src={`/bg-${index}.png`}
               className="fixed bottom-0 right-0 w-full max-w-6xl"
               initial="hidden"
