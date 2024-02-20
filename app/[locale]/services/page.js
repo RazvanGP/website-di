@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import BulletPoint from "../components/BulletPoint";
-import services from "../utils/services.json";
+import services from "../../utils/services.json";
+
 import Link from "next/link";
 import Image from "next/image";
-import Reveal from "../components/Reveal";
-import Lines from "../components/Lines";
+import Reveal from "../../components/Reveal";
+import Lines from "../../components/Lines";
 const ServicesPage = () => {
   return (
     <>

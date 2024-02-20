@@ -1,8 +1,8 @@
 "use client";
 import { GiRibbonMedal } from "react-icons/gi";
-import BulletPoint from "../components/BulletPoint";
-import Reveal from "../components/Reveal";
-import Lines from "../components/Lines";
+import BulletPoint from "../../components/BulletPoint";
+import Reveal from "../../components/Reveal";
+import Lines from "../../components/Lines";
 
 const AboutPage = () => {
   return (

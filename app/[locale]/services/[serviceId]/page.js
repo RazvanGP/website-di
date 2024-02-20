@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import services from "../../utils/services.json";
+import services from "../../../utils/services.json";
 import BulletPoint from "@/app/components/BulletPoint";
 import Reveal from "@/app/components/Reveal";
 import Lines from "@/app/components/Lines";

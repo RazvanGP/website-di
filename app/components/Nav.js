@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import MobileNav from "./MobileNav";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import useWindowSize from "./useWindowSize";
+import LanguageChanger from "./LanguageChanger";
 
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -51,7 +52,7 @@ const Nav = () => {
         <img src="/logo.png" alt="" width={100} />
       </Link>
 
-      <nav className="hidden md:flex justify-between pr-5 gap-5 ">
+      <div className="hidden md:flex justify-between pr-5 gap-5 ">
         <Link
           href="/"
           className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300"
@@ -82,8 +83,11 @@ const Nav = () => {
         >
           CONTACT
         </Link>
-      </nav>
+      </div>
 
+      <div className="absolute right-8 md:right-14 top-20">
+        <LanguageChanger />
+      </div>
       <motion.button
         whileHover={{ scale: 1.2 }}
         className="md:hidden flex flex-col items-end gap-2 z-10 group"

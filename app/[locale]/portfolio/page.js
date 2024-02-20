@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import projects from "../utils/projects.json";
+import projects from "../../utils/projects.json";
 import Image from "next/image";
 import Link from "next/link";
-import Reveal from "../components/Reveal";
-import Lines from "../components/Lines";
+import Reveal from "../../components/Reveal";
+import Lines from "../../components/Lines";
 
 const PortfolioPage = () => {
   return (

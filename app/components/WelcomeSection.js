@@ -3,23 +3,23 @@ import BulletPoint from "./BulletPoint";
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 
+import { useTranslation } from "react-i18next";
+
 const WelcomeSection = () => {
+  const { t } = useTranslation();
+
   return (
     <Reveal>
       <section className="home-section text-2xl flex flex-col justify-center items-start gap-10">
         <Reveal delay={0.2}>
           <h2 className=" font-primary font-extrabold text-primary-blue  uppercase text-2xl md:text-4xl tracking-[12px] ">
-            welcome
+            {t("welcome-title")}
           </h2>
         </Reveal>
         <Reveal delay={0.3}>
           <p className="font-semibold">
-            <span className="text-accent-blue ">
-              We provide innovative solutions
-            </span>
-            &nbsp; for the maritime industry. We use the latest technologies and
-            best practices to ensure that our projects are safe, efficient, and
-            our team deliver high-quality results.
+            <span className="text-accent-blue ">{t("welcome-text-acc")}</span>
+            {t("welcome-text")}
           </p>
         </Reveal>
 
@@ -27,25 +27,20 @@ const WelcomeSection = () => {
           <Reveal delay={0.4}>
             <li className="flex items-center gap-4">
               <BulletPoint />
-              <span className="ml-4">Over 6 years of experience</span>
+              <span className="ml-4">{t("welcome-item-1")}</span>
             </li>
           </Reveal>
           <Reveal delay={0.45}>
             <li className="flex items-center gap-4">
               <BulletPoint />
-              <span className="ml-4">
-                Delivering design services with commitment to excellence.
-              </span>
+              <span className="ml-4">{t("welcome-item-2")}</span>
             </li>
           </Reveal>
 
           <Reveal delay={0.5}>
             <li className="flex items-center gap-4">
               <BulletPoint />
-              <span className="ml-4">
-                Design through the latest marine-industry technologies and
-                softwares.
-              </span>
+              <span className="ml-4">{t("welcome-item-3")}</span>
             </li>
           </Reveal>
         </ul>

@@ -1,13 +1,13 @@
 "use client";
 
-import Reveal from "../components/Reveal";
+import Reveal from "../../components/Reveal";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa6";
 import { useEffect, useState } from "react";
-import Lines from "../components/Lines";
-import MessageSentDialog from "../components/MessageSentDialog";
+import Lines from "../../components/Lines";
+import MessageSentDialog from "../../components/MessageSentDialog";
 
 const ContactPage = () => {
   const initialFormData = {

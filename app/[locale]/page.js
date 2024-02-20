@@ -1,13 +1,13 @@
 "use client";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useState, useEffect, useRef, useContext } from "react";
-import { Context } from "./components/Context";
-import HeroSection from "./components/HeroSection";
-import WelcomeSection from "./components/WelcomeSection";
-import Testimonials from "./components/Testimonials";
-import Reveal from "./components/Reveal";
-import ContactSection from "./components/ContactSection";
-import Lines from "./components/Lines";
+import { Context } from "../components/Context";
+import HeroSection from "../components/HeroSection";
+import WelcomeSection from "../components/WelcomeSection";
+import Testimonials from "../components/Testimonials";
+import Reveal from "../components/Reveal";
+import ContactSection from "../components/ContactSection";
+import Lines from "../components/Lines";
 
 export default function Home() {
   const { scrollYValue } = useContext(Context);
