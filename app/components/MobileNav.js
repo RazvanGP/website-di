@@ -2,8 +2,17 @@ import Link from "next/link";
 import { useState } from "react";
 import { easeInOut, motion, AnimatePresence } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
+
 const MobileNav = (setShowMobileNav) => {
-  const navItems = ["home", "about", "services", "portfolio", "contact"];
+  const navItems = [
+    "menu-home",
+    "menu-about",
+    "menu-services",
+    "menu-portfolio",
+    "menu-contact",
+  ];
+  const { t } = useTranslation();
 
   return (
     // backdrop-brightness-50 backdrop-blur-md
@@ -31,7 +40,7 @@ const MobileNav = (setShowMobileNav) => {
                 setShowMobileNav(false);
               }}
             >
-              {item}
+              {t(`common:${item}`)}
             </Link>
           </motion.li>
         ))}

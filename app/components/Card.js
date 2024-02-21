@@ -1,6 +1,10 @@
 import { FaQuoteLeft } from "react-icons/fa6";
 
+import { useTranslation } from "react-i18next";
+
 const Card = ({ author, position, textBody, handleCardModal, cardId }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="grabbing min-h-[300px] lg:min-h-[350px] bg-primary-blue flex justify-evenly rounded-xl font-secondary sm:drop-shadow-lg drop-shadow-2xl ">
       <div className="p-4 lg:p-10 flex flex-col items-end justify-around relative gap-4 ">
@@ -13,7 +17,7 @@ const Card = ({ author, position, textBody, handleCardModal, cardId }) => {
             handleCardModal(true, cardId);
           }}
         >
-          Read more
+          {t("testimonials-card-btn")}
         </button>
         <div className="flex flex-col items-end ">
           <h2 className="text-accent-blue text-lg font-bold">{author}</h2>

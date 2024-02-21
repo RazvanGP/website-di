@@ -12,12 +12,16 @@ import feedbacks from "../utils/feedback.json";
 import useWindowSize from "./useWindowSize";
 import Reveal from "./Reveal";
 
+import { useTranslation } from "react-i18next";
+
 const Testimonials = () => {
   const windowSize = useWindowSize();
 
   const [selectedCard, setSelectedCard] = useState();
   const [showCardModal, setShowCardModal] = useState(false);
   const [x, setX] = useState(1);
+
+  const { t } = useTranslation();
 
   const handleCardModal = (value) => {
     setShowCardModal(value);
@@ -36,10 +40,9 @@ const Testimonials = () => {
         <Reveal delay={0.2}>
           <p className="font-semibold font-secondary text-2xl text-text-grey ">
             <span className="text-accent-blue">
-              Dive into the feedback below
+              {t("testimonials-text-acc")}
             </span>
-            &nbsp; to explore how our solutions in the marine industry have
-            empowered us with confidence and expertise.&nbsp;
+            {t("testimonials-text")}
           </p>
         </Reveal>
         <Reveal delay={0.3}>
@@ -72,7 +75,7 @@ const Testimonials = () => {
                     cardId={card.id}
                     author={card.author}
                     position={card.position}
-                    textBody={card.textBody}
+                    textBody={t(`testimonials-textBody-${cardIdx}`)}
                     imgSrc={card.imgSrc}
                     gender={card.gender}
                     handleCardModal={handleCardModal}

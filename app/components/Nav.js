@@ -7,11 +7,15 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import useWindowSize from "./useWindowSize";
 import LanguageChanger from "./LanguageChanger";
 
+import { useTranslation } from "react-i18next";
+
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [isNavHidden, setIsNavHidden] = useState(false);
 
   const { scrollY } = useScroll();
+
+  const { t } = useTranslation();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
@@ -30,6 +34,14 @@ const Nav = () => {
   };
 
   const windowSize = useWindowSize();
+
+  const navItems = [
+    "menu-home",
+    "menu-about",
+    "menu-services",
+    "menu-portfolio",
+    "menu-contact",
+  ];
 
   //temporary solution
   useEffect(() => {
@@ -52,38 +64,21 @@ const Nav = () => {
         <img src="/logo.png" alt="" width={100} />
       </Link>
 
-      <div className="hidden md:flex justify-between pr-5 gap-5 ">
-        <Link
-          href="/"
-          className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300"
-        >
-          HOME
-        </Link>
-        <Link
-          href="/about"
-          className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300"
-        >
-          ABOUT
-        </Link>
-        <Link
-          href="/services"
-          className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300"
-        >
-          SERVICES
-        </Link>
-        <Link
-          href="/portfolio"
-          className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300"
-        >
-          PORTFOLIO
-        </Link>
-        <Link
-          href="/contact"
-          className=" hover:text-accent-blue hover:scale-110 ease-in-out duration-300"
-        >
-          CONTACT
-        </Link>
-      </div>
+      <ul className="hidden md:flex justify-between pr-5 gap-5 ">
+        {navItems?.map((item, index) => (
+          <li className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300 uppercase">
+            <Link
+              href={`/${index === 0 ? "/" : item.split("-")[1]}`}
+              className="uppercase"
+              onClick={() => {
+                setShowMobileNav(false);
+              }}
+            >
+              {t(`common:${item}`)}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       <div className="absolute right-8 md:right-14 top-20">
         <LanguageChanger />
