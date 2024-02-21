@@ -66,7 +66,10 @@ const Nav = () => {
 
       <ul className="hidden md:flex justify-between pr-5 gap-5 ">
         {navItems?.map((item, index) => (
-          <li className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300 uppercase">
+          <li
+            key={index}
+            className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300 uppercase"
+          >
             <Link
               href={`/${index === 0 ? "/" : item.split("-")[1]}`}
               className="uppercase"
