@@ -39,7 +39,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-2 pl-4 font-secondary text-text-grey text-xl font-semibold">
             {itemsArr.map((item, index) => {
               return (
-                <Reveal delay={0.2 + 0.05 * index}>
+                <Reveal delay={0.2 + 0.05 * index} key={index}>
                   <div className="flex">
                     <BulletPoint />
                     <span className="ml-4">
