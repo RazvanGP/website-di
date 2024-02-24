@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 import Lines from "../../components/Lines";
 import MessageSentDialog from "../../components/MessageSentDialog";
 
+import { useTranslation } from "react-i18next";
+
 const ContactPage = () => {
   const initialFormData = {
     name: "",
@@ -28,6 +30,8 @@ const ContactPage = () => {
 
   const nameRegex = /^[a-zA-Z ]+$/;
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  const { t } = useTranslation();
 
   const handleNameChange = (e) => {
     const inputValue = e.target.value.trim();
@@ -131,7 +135,7 @@ const ContactPage = () => {
               data-validation="text"
               id="name"
               name="name"
-              placeholder="Name *"
+              placeholder={`${t("contact:contact-placeholder-name")} *`}
               value={formData.name}
               onChange={handleNameChange}
               onFocus={() => {
@@ -140,7 +144,7 @@ const ContactPage = () => {
             ></input>
             {nameTouched && !isValidName && (
               <p className="text-xs text-accent-red transition-all duration-500 ease-in-out ">
-                Please enter a valid name.
+                {t("contact:contact-err-name")}
               </p>
             )}
           </Reveal>
@@ -157,7 +161,7 @@ const ContactPage = () => {
               data-validation="email"
               id="email"
               name="email"
-              placeholder="Email *"
+              placeholder={`${t("contact:contact-placeholder-email")} *`}
               value={formData.email}
               onChange={handleEmailChange}
               onFocus={() => {
@@ -166,7 +170,7 @@ const ContactPage = () => {
             ></input>
             {emailTouched && !isValidEmail && (
               <p className="text-xs text-accent-red transition-all duration-500 ease-in-out">
-                Please enter a valid email address.
+                {t("contact:contact-err-email")}
               </p>
             )}
           </Reveal>
@@ -179,7 +183,7 @@ const ContactPage = () => {
               data-validation="text"
               id="phone"
               name="phone"
-              placeholder="Phone"
+              placeholder={`${t("contact:contact-placeholder-phone")}`}
               value={formData.phone}
               onChange={(e) => {
                 setFormData({ ...formData, phone: e.target.value });
@@ -200,7 +204,7 @@ const ContactPage = () => {
               data-validation="text"
               cols="30"
               rows="10"
-              placeholder="Message *"
+              placeholder={`${t("contact:contact-placeholder-message")} *`}
               required={true}
               value={formData.message}
               onChange={handleMessageChange}
@@ -222,15 +226,15 @@ const ContactPage = () => {
               }`}
               type="submit"
             >
-              Send message
+              {t("contact:contact-btn-send")}
             </button>
           </Reveal>
         </form>
         {/* Contact informations */}
         <Reveal delay={0.25}>
-          <div className="hidden md:block text-lg text-primary-blue font-bold">
-            <h2 className="font-primary font-extrabold text-accent-blue  uppercase md:text-2xl tracking-[4px] pb-5">
-              get in touch
+          <div className="hidden md:block text-lg text-primary-blue font-bold backdrop-blur-md p-5">
+            <h2 className="font-primary font-extrabold text-accent-blue  uppercase md:text-2xl tracking-[4px] pb-5 ">
+              {t("contact:contact-get-in-touch")}
             </h2>
             <table>
               <tbody>
@@ -257,7 +261,7 @@ const ContactPage = () => {
 
             <div className="flex items-center gap-5">
               <span className="text-lg text-primary-blue font-bold">
-                Socials:{" "}
+                {t("contact:contact-socials")}:{" "}
               </span>
               <a href="https://www.linkedin.com/">
                 <FaLinkedin className="hover:cursor-pointer hover:scale-125 ease-in-out duration-300" />
