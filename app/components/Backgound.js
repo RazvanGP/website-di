@@ -1,10 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect, useTransition } from "react";
 import { Context } from "./Context";
 import { IoIosArrowDropdown, IoIosArrowDropleft } from "react-icons/io";
-
+import { useTranslation } from "react-i18next";
 const Backgound = () => {
+  const { t } = useTranslation();
   const { scrollYValue } = useContext(Context);
 
   const [opacityBg0, setOpacityBg0] = useState(0);
@@ -60,7 +61,7 @@ const Backgound = () => {
         })}
       </div>
       <div className="font-titling-gothic text-primary-blue font-black md:text-2xl italic fixed right-10 flex flex-col items-end opacity-20 pt-[20vh] sm:px-5">
-        <p className="">Let&apos;s build together...</p>
+        <p className="">{t("common:bg-text")}</p>
         <p className="text-6xl md:text-8xl text-accent-blue">
           {Math.round(progress * 100) + "%"}
         </p>
@@ -76,7 +77,7 @@ const Backgound = () => {
             }}
           >
             <IoIosArrowDropdown size={50} color="#2E84FF" />
-            <p className="text-xs">SCROLL DOWN</p>
+            <p className="text-xs uppercase">{t("common:bg-scroll")}</p>
           </motion.div>
         ) : (
           <IoIosArrowDropleft size={50} color="#2E84FF" />
