@@ -8,9 +8,12 @@ import "swiper/css/navigation";
 import "swiper/css";
 import useWindowSize from "./useWindowSize";
 
+import { useTranslation } from "react-i18next";
+
 const CardModal = ({ handleCardModal, currentCard }) => {
   const windowSize = useWindowSize();
 
+  const { t } = useTranslation();
   return (
     <div className="fixed top-0 left-0 z-10 h-screen w-screen">
       <Swiper
@@ -54,7 +57,7 @@ const CardModal = ({ handleCardModal, currentCard }) => {
                   {/* card body */}
                   <div className="max-h-[80%] p-5 flex-1 flex flex-col justify-evenly">
                     <p className=" text-silver-grey italic overflow-auto">
-                      {card.textBody}
+                      {t(`testimonials-textBody-${cardIdx}`)}
                     </p>
 
                     <div className="w-full  flex justify-end items-center sm:self-end">
