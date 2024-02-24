@@ -6,7 +6,11 @@ import Link from "next/link";
 import Reveal from "../../components/Reveal";
 import Lines from "../../components/Lines";
 
+import { useTranslation } from "react-i18next";
+
 const PortfolioPage = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Lines />
@@ -14,11 +18,9 @@ const PortfolioPage = () => {
         <Reveal>
           <p className="font-semibold pb-10 font-secondary text-text-grey text-2xl self-start">
             <span className="text-accent-blue ">
-              I proudly showcase past projects
+              {t("projects:projects-title-acc")}
             </span>
-            &nbsp;I&apos;ve been closely involved with. Each project highlights
-            the depth of my expertise in structural design engineering within
-            the shipbuilding industry.
+            {t("projects:projects-title")}
           </p>
         </Reveal>
 
@@ -47,7 +49,8 @@ const PortfolioPage = () => {
                           {project.title}
                         </h1>
                         <p className="text-justify text-slate-700">
-                          {project.description}
+                          {/* {project.description} */}
+                          {t(`projects:project-description-${index}`)}
                         </p>
                         <Link
                           href={project.page}

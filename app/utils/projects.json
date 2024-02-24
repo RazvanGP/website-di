@@ -3,42 +3,36 @@
     "id": 0,
     "imgSrc": "/project0.jpg",
     "title": "Amels 60",
-    "description": "A 60 meters motoryacht, blending innovation and luxury seamlessly.",
     "page": "https://www.amelsyachting.com/portfolio/amels-60"
   },
   {
     "id": 1,
     "imgSrc": "/project1.jpg",
     "title": "Arrow ",
-    "description": "Feadship's 75m masterpiece, blending innovation, elegance, and debut design excellence.",
     "page": "https://www.feadship.nl/fleet/arrow"
   },
   {
     "id": 2,
     "imgSrc": "/project2.jpeg",
     "title": "Feadship 1010",
-    "description": "A colossal 118m luxury yacht, epitomizing elegance and innovation in 2024.",
     "page": "https://www.superyachttimes.com/yachts/feadship-1010"
   },
   {
     "id": 3,
     "imgSrc": "/project3.jpg",
     "title": "MAD 3500",
-    "description": "TSHD - Damen's cutting-edge Marine Aggregate Dredger 3500",
     "page": "https://www.damen.com/insights-center/news/damens-second-mad-3500-enters-service"
   },
   {
     "id": 4,
     "imgSrc": "/project4.jpg",
     "title": "VARD 9 01",
-    "description": "VARD 9 01 is specially designed and equipped for Subsea cable laying operations",
     "page": "https://www.vard.com/ship-design/vard-9-series/vard-9-01-mid-size-dual-function-vessel"
   },
   {
     "id": 5,
     "imgSrc": "/project5.jpeg",
     "title": "OPV 2600",
-    "description": "Damen's OPV 2600 Military: Versatile offshore patrol vessel, advanced capabilities.",
     "page": "https://www.damen.com/vessels/defence-and-security/opv/offshore-patrol-vessel-2600-military"
   }
 ]
