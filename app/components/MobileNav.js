@@ -5,13 +5,7 @@ import { easeInOut, motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const MobileNav = (setShowMobileNav) => {
-  const navItems = [
-    "menu-home",
-    "menu-about",
-    "menu-services",
-    "menu-portfolio",
-    "menu-contact",
-  ];
+  const navItems = ["home", "about", "services", "portfolio", "contact"];
   const { t } = useTranslation();
 
   return (
