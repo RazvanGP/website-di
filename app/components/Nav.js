@@ -8,6 +8,7 @@ import useWindowSize from "./useWindowSize";
 import LanguageChanger from "./LanguageChanger";
 
 import { useTranslation } from "react-i18next";
+import DarkModeToggleBtn from "./DarkModeToggleBtn";
 
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -83,7 +84,8 @@ const Nav = () => {
         ))}
       </ul>
 
-      <div className="absolute right-8 md:right-14 top-20">
+      <div className="absolute flex gap-5 right-8 md:right-14 top-20">
+        <DarkModeToggleBtn />
         <LanguageChanger />
       </div>
       <motion.button

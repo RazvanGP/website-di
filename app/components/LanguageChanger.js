@@ -39,20 +39,20 @@ export default function LanguageChanger() {
   };
 
   return (
-    <div className="flex gap-2 text-xs">
+    <div className="flex items-end gap-2 text-[10px]">
       <button
         onClick={() => handleOnClick("en")}
         className={`hover:scale-110 ease-in-out duration-300 hover:text-accent-blue ${
-          selectedLanguage === "en" ? "text-accent-blue" : ""
+          selectedLanguage === "en" ? "text-accent-blue text-base" : ""
         }`}
       >
         EN
       </button>
-      <span className="border-r-2"></span>
+
       <button
         onClick={() => handleOnClick("nl")}
         className={`hover:scale-110 ease-in-out duration-300 hover:text-accent-blue ${
-          selectedLanguage === "nl" ? "text-accent-blue" : ""
+          selectedLanguage === "nl" ? "text-accent-blue text-base" : ""
         }`}
       >
         NL
