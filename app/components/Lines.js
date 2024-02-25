@@ -10,17 +10,17 @@ const Lines = () => {
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <div className="h-full w-full flex justify-around">
-        <div className=" min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)]"></div>
+        <div className=" min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)] dark:via-[rgba(1,76,99,0.8)]"></div>
 
-        <div className="min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)]"></div>
+        <div className="min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)] dark:via-[rgba(1,76,99,0.8)]"></div>
 
-        <div className="min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)]"></div>
+        <div className="min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)] dark:via-[rgba(1,76,99,0.8)]"></div>
 
-        <div className="hidden sm:block min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)]"></div>
+        <div className="hidden sm:block min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)] dark:via-[rgba(1,76,99,0.8)]"></div>
 
-        <div className="hidden md:block min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)]"></div>
+        <div className="hidden md:block min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)] dark:via-[rgba(1,76,99,0.8)]"></div>
 
-        <div className="hidden lg:block min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)]"></div>
+        <div className="hidden lg:block min-h-full w-[1px] bg-gradient-to-b from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(0,38,50,0.2)] dark:via-[rgba(1,76,99,0.8)]"></div>
       </div>
     </motion.div>
   );

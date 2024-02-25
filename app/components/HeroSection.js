@@ -19,6 +19,7 @@ const HeroSection = () => {
 
   const { t } = useTranslation();
 
+  const darkMode = useContext(Context);
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrollYSection(latest);
   });
@@ -29,20 +30,23 @@ const HeroSection = () => {
         <div className="flex items-center overflow-hidden">
           <div className="p-10 min-w-max font-bold font-primary pl-5 flex flex-col items-start gap-10">
             <Reveal delay={0.2}>
-              <h1 className="text-sm md:text-lg text-accent-red font-extrabold tracking-[3px] md:tracking-[10px] drop-shadow-xl">
+              <h1 className="text-sm md:text-lg text-accent-red dark:text-dark-accent-blue font-extrabold tracking-[3px] md:tracking-[10px] drop-shadow-xl">
                 SHIP DESIGN ENGINEERING
               </h1>
             </Reveal>
 
             <Reveal delay={0.35}>
               <div className="flex flex-col">
-                <PiQuotesThin color="#283260" className="w-[50px] h-[50px]" />
-                <p className="text-4xl md:text-6xl lg:text-8xl text-primary-blue font-black flex flex-col">
+                <PiQuotesThin
+                  color={darkMode === true ? "#283260" : "#acacac"}
+                  className="w-[50px] h-[50px]"
+                />
+                <p className="text-4xl md:text-6xl lg:text-8xl text-primary-blue dark:text-silver-grey font-black flex flex-col">
                   <span>{t("hero-motto-1")}</span>
                   <span className="text-end">{t("hero-motto-2")}</span>
                 </p>
                 <PiQuotesThin
-                  color="#283260"
+                  color={darkMode === true ? "#283260" : "#acacac"}
                   className="w-[50px] h-[50px] self-end"
                 />
               </div>
@@ -51,7 +55,7 @@ const HeroSection = () => {
             <Reveal delay={0.45}>
               <Link
                 href="/services"
-                className="px-4 py-2 text-base lg:text-xl text-primary-blue uppercase bg-transparent border-2 border-primary-blue hover:bg-primary-blue hover:text-white text-md duration-300"
+                className="px-4 py-2 text-base lg:text-xl text-primary-blue dark:text-dark-accent-blue uppercase bg-transparent border-2 border-primary-blue dark:hover:border-silver-grey dark:border-dark-accent-blue hover:bg-primary-blue dark:hover:bg-dark-accent-blue hover:text-white dark:hover:text-slate-50 text-md duration-300"
               >
                 {t("hero-btn")}
               </Link>

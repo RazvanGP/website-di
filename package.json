@@ -19,7 +19,8 @@
     "react-dom": "^18",
     "react-i18next": "^14.0.5",
     "react-icons": "^4.11.0",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "universal-cookie": "^7.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
