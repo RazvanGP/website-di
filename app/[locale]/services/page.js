@@ -22,7 +22,7 @@ const ServicesPage = () => {
           </p>
         </Reveal>
         <Reveal>
-          <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 xl:gap-x-28 gap-y-[350px]  mb-[250px]">
+          <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 xl:gap-x-28 gap-y-[300px] mb-[250px]">
             {services.map((service, index) => {
               return (
                 <Reveal key={index}>
