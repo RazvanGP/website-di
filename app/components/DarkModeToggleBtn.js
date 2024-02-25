@@ -6,7 +6,7 @@ const DarkModeToggleBtn = () => {
   const { darkMode, setDarkMode } = useContext(Context);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prev) => !darkMode);
   };
 
   return (

@@ -1,11 +1,9 @@
 import Provider from "../components/Context";
 import "./globals.css";
-import Backgound from "../components/Backgound";
-import Nav from "../components/Nav";
-import Lines from "../components/Lines";
-import Footer from "../components/Footer";
+
 import initTranslations from "../i18n";
 import TranslationsProvider from "../components/TranslationsProivider";
+import BodyContent from "../components/BodyContent";
 
 export const metadata = {
   title: "Ship Design Engineering",
@@ -32,12 +30,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           locale={locale}
           namespaces={i18nNamespaces}
         >
-          <body className="relative min-h-screen flex flex-col ">
-            <Backgound />
-            <Nav />
-            {children}
-            <Footer />
-          </body>
+          <BodyContent>{children}</BodyContent>
         </TranslationsProvider>
       </Provider>
     </html>
