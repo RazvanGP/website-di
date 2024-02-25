@@ -4,6 +4,7 @@ import { useState, useContext, useEffect, useTransition } from "react";
 import { Context } from "./Context";
 import { IoIosArrowDropdown, IoIosArrowDropleft } from "react-icons/io";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 const Backgound = () => {
   const { t } = useTranslation();
   const { scrollYValue } = useContext(Context);
@@ -48,15 +49,21 @@ const Backgound = () => {
       <div className="opacity-90">
         {imgsArr.map((img, index) => {
           return (
-            <motion.img
+            <motion.div
               key={`bg${index}`}
-              src={`/bg-${index}.png`}
-              className="fixed bottom-0 right-0 w-full max-w-6xl"
+              className="fixed -bottom-36 right-0 w-full h-full max-w-6xl"
               initial="hidden"
               animate={{ opacity: img }}
               exit={{ opacity: 0 }}
               transition={{ type: "spring", stiffness: 100, damping: 50 }}
-            ></motion.img>
+            >
+              <Image
+                src={`/bg-${index}.png`}
+                fill={true}
+                className="object-contain"
+                loading="lazy"
+              ></Image>
+            </motion.div>
           );
         })}
       </div>

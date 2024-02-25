@@ -37,6 +37,7 @@ const PortfolioPage = () => {
                         height={75}
                         alt="project image"
                         className="w-full h-48 object-cover"
+                        loading="lazy"
                       />
                       <div className="absolute min-h-[50px] min-w-[300px] -right-5 bottom-0 backdrop-blur-sm"></div>
                     </div>
