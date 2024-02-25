@@ -239,22 +239,31 @@ const ContactPage = () => {
             <table>
               <tbody>
                 <tr>
-                  <td className="w-10 ">
+                  <td className="w-10">
                     <PiPhoneCallFill size={25} />
                   </td>
-                  <td>+31 6 48 12 47 88</td>
+                  <td className="pl-2 hover:scale-105 hover:text-accent-blue ease-in-out duration-300">
+                    <a href="tel:+31648124788">+31 6 48 12 47 88</a>
+                  </td>
                 </tr>
+
                 <tr>
                   <td className="w-10 h-10">
                     <FaWhatsappSquare size={25} />
                   </td>
-                  <td>+31 6 48 12 47 88</td>
+                  <td className="pl-2 hover:scale-105 hover:text-accent-blue ease-in-out duration-300">
+                    <a href="https://wa.me/31648124788">+31 6 48 12 47 88</a>
+                  </td>
                 </tr>
                 <tr>
                   <td>
                     <MdEmail size={25} />
                   </td>
-                  <td>contact@shipdesignengineering.com</td>
+                  <td className="pl-2 hover:scale-105 hover:text-accent-blue ease-in-out duration-300">
+                    <a href="mailto:contact@shipdesignengineering.com">
+                      contact@shipdesignengineering.com
+                    </a>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -264,7 +273,7 @@ const ContactPage = () => {
                 {t("contact:contact-socials")}:{" "}
               </span>
               <a href="https://www.linkedin.com/">
-                <FaLinkedin className="hover:cursor-pointer hover:scale-125 ease-in-out duration-300" />
+                <FaLinkedin className="hover:cursor-pointer hover:scale-125 hover:text-accent-blue ease-in-out duration-300" />
               </a>
             </div>
           </div>
