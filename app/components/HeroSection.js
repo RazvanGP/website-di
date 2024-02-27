@@ -26,7 +26,7 @@ const HeroSection = () => {
 
   return (
     <Reveal>
-      <section className="home-section h-[80vh] flex items-center">
+      <section className="home-section h-screen flex items-center">
         <div className="flex items-center overflow-hidden">
           <div className="p-10 min-w-max font-bold font-primary pl-5 flex flex-col items-start gap-10">
             <Reveal delay={0.2}>
@@ -36,12 +36,12 @@ const HeroSection = () => {
             </Reveal>
 
             <Reveal delay={0.35}>
-              <div className="flex flex-col">
+              <div className="flex flex-col w-[100%]">
                 <PiQuotesThin
                   color={darkMode === true ? "#283260" : "#acacac"}
                   className="w-[50px] h-[50px]"
                 />
-                <p className="text-4xl md:text-6xl lg:text-8xl text-primary-blue dark:text-silver-grey font-black flex flex-col">
+                <p className="text-4xl md:text-6xl lg:text-8xl text-primary-blue dark:text-silver-grey font-black flex flex-col gap-5">
                   <span>{t("hero-motto-1")}</span>
                   <span className="text-end">{t("hero-motto-2")}</span>
                 </p>

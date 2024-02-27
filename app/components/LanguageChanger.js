@@ -42,8 +42,10 @@ export default function LanguageChanger() {
     <div className="flex items-end gap-2 text-[10px]">
       <button
         onClick={() => handleOnClick("en")}
-        className={`hover:scale-110 ease-in-out duration-300 hover:text-accent-blue ${
-          selectedLanguage === "en" ? "text-accent-blue text-base" : ""
+        className={`hover:scale-110 ease-in-out duration-300 text-accent-blue  hover:text-accent-blue dark:hover:text-white ${
+          selectedLanguage === "en"
+            ? " dark:text-dark-accent-blue text-sm"
+            : "text-silver-grey"
         }`}
       >
         EN
@@ -51,8 +53,10 @@ export default function LanguageChanger() {
 
       <button
         onClick={() => handleOnClick("nl")}
-        className={`hover:scale-110 ease-in-out duration-300 hover:text-accent-blue ${
-          selectedLanguage === "nl" ? "text-accent-blue text-base" : ""
+        className={`hover:scale-110 ease-in-out duration-300 text-accent-blue  hover:text-accent-blue dark:hover:text-white ${
+          selectedLanguage === "nl"
+            ? " dark:text-dark-accent-blue text-sm"
+            : "text-silver-grey"
         }`}
       >
         NL

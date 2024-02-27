@@ -9,7 +9,7 @@ import Lines from "../components/Lines";
 
 export default function Home() {
   return (
-    <motion.main className="dark:bg-dark-primary-blue flex flex-col justify-arround items-center gap-48 pb-10">
+    <motion.main className="dark:bg-dark-primary-blue flex flex-col justify-arround items-center gap-28 pb-10">
       <Lines />
       <HeroSection />
       <WelcomeSection />

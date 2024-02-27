@@ -38,8 +38,8 @@ const Testimonials = () => {
     <Reveal>
       <section className="home-section flex flex-col justify-center gap-10">
         <Reveal delay={0.2}>
-          <p className="font-semibold font-secondary text-2xl text-text-grey ">
-            <span className="text-accent-blue">
+          <p className="font-semibold font-secondary text-2xl text-text-grey dark:text-dark-text-grey">
+            <span className="text-accent-blue dark:text-dark-accent-blue">
               {t("testimonials-text-acc")}
             </span>
             {t("testimonials-text")}
@@ -88,7 +88,7 @@ const Testimonials = () => {
 
         <Reveal delay={0.4}>
           <motion.p
-            className={`w-full h-[5px] bg-gradient-to-r from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(46,132,255,1)] self-center`}
+            className={`w-full h-[5px] bg-gradient-to-r from-[rgba(0,38,50,0)] to-[rgba(0,38,50,0)] via-[rgba(46,132,255,1)] dark:via-dark-accent-blue self-center`}
             style={{
               scaleX: `${x}%`,
               transition: "all 0.5s ease",

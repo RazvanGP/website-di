@@ -8,6 +8,7 @@ import Image from "next/image";
 const Backgound = () => {
   const { t } = useTranslation();
   const { scrollYValue } = useContext(Context);
+  const darkMode = useContext(Context);
 
   const [opacityBg0, setOpacityBg0] = useState(0);
   const [opacityBg1, setOpacityBg1] = useState(0);
@@ -69,7 +70,7 @@ const Backgound = () => {
       </div>
       <div className="font-titling-gothic text-primary-blue font-black md:text-2xl italic fixed right-10 flex flex-col items-end opacity-20 pt-[20vh] sm:px-5">
         <p className="">{t("common:bg-text")}</p>
-        <p className="text-6xl md:text-8xl text-accent-blue">
+        <p className="text-6xl md:text-8xl text-accent-blue dark:text-dark-accent-blue">
           {Math.round(progress * 100) + "%"}
         </p>
         {scrollYValue <= 0.95 ? (
@@ -83,11 +84,19 @@ const Backgound = () => {
               duration: 1,
             }}
           >
-            <IoIosArrowDropdown size={50} color="#2E84FF" />
-            <p className="text-xs uppercase">{t("common:bg-scroll")}</p>
+            <IoIosArrowDropdown
+              size={50}
+              color={`${darkMode ? "#2c7da0" : "#2E84FF"}`}
+            />
+            <p className="text-xs uppercase dark:text-silver-grey">
+              {t("common:bg-scroll")}
+            </p>
           </motion.div>
         ) : (
-          <IoIosArrowDropleft size={50} color="#2E84FF" />
+          <IoIosArrowDropleft
+            size={50}
+            color={`${darkMode ? "#2c7da0" : "#2E84FF"}`}
+          />
         )}
       </div>
     </div>

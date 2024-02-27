@@ -39,7 +39,7 @@ body {
     margin-bottom: 100px;
   }
 
-  .swiper-button-next {
+  /* .swiper-button-next {
     margin-right: 50px;
     padding: 40px;
     border-radius: 100%;
@@ -61,7 +61,7 @@ body {
   .swiper-button-prev:hover {
     scale: 1.2;
     transition: all 0.3s ease-in-out;
-  }
+  } */
 }
 
 @layer base {

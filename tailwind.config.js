@@ -20,6 +20,7 @@ module.exports = {
         "accent-red": "#DA2C38",
         "dark-primary-blue": "#203E4A",
         "dark-accent-blue": "#2c7da0",
+        "dark-text-grey": "#101935",
       },
     },
   },

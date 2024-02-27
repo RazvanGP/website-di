@@ -15,8 +15,12 @@ const DarkModeToggleBtn = () => {
   };
 
   return (
-    <button className="darkModeToggleBtn" onClick={toggleDarkMode}>
-      {darkMode ? <BsMoonStars /> : <BsSun />}
+    <button onClick={toggleDarkMode}>
+      {darkMode ? (
+        <BsMoonStars color={`${darkMode ? "#2c7da0" : "#2E84FF"}`} />
+      ) : (
+        <BsSun color={`${darkMode ? "#2c7da0" : "#2E84FF"}`} />
+      )}
     </button>
   );
 };
