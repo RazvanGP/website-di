@@ -279,7 +279,7 @@ const ContactPage = () => {
           </div>
         </Reveal>
 
-        {showSentModal && (
+        {!showSentModal && (
           <MessageSentDialog handleSentModal={handleSentModal} />
         )}
       </main>
