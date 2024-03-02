@@ -4,6 +4,7 @@ import "./globals.css";
 import initTranslations from "../i18n";
 import TranslationsProvider from "../components/TranslationsProivider";
 import BodyContent from "../components/BodyContent";
+import { Providers } from "../components/Providers";
 
 export const metadata = {
   title: "Ship Design Engineering",
@@ -23,16 +24,22 @@ export default async function RootLayout({ children, params: { locale } }) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
-    <html lang="en" className="scroll-smooth no-scrollbar">
-      <Provider>
-        <TranslationsProvider
-          resources={resources}
-          locale={locale}
-          namespaces={i18nNamespaces}
-        >
-          <BodyContent>{children}</BodyContent>
-        </TranslationsProvider>
-      </Provider>
+    <html
+      lang="en"
+      className="scroll-smooth no-scrollbar"
+      suppressHydrationWarning
+    >
+      <Providers>
+        <Provider>
+          <TranslationsProvider
+            resources={resources}
+            locale={locale}
+            namespaces={i18nNamespaces}
+          >
+            <BodyContent>{children}</BodyContent>
+          </TranslationsProvider>
+        </Provider>
+      </Providers>
     </html>
   );
 }
