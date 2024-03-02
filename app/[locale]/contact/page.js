@@ -121,15 +121,15 @@ const ContactPage = () => {
         <form
           onSubmit={handleSubmit}
           id="contact=form"
-          className="text-primary-blue flex flex-col gap-5 justify-center items-start"
+          className="text-primary-blue dark:text-silver-grey flex flex-col gap-5 justify-center items-start"
         >
           {/* name input field */}
           <Reveal>
             <input
-              className={`outline-none border-[1px] focus:border-2 focus:rounded-md p-2 xl:w-[300px] ${
+              className={`outline-none border-[1px] focus:border-2 focus:rounded-md p-2 xl:w-[300px] bg-slate-50 dark:bg-dark-primary-blue ${
                 nameTouched && !isValidName
-                  ? "border-red-500"
-                  : "border-primary-blue"
+                  ? "border-red-500 dark:border-red-800"
+                  : "border-primary-blue dark:border-dark-accent-blue"
               }`}
               type="text"
               data-validation="text"
@@ -152,10 +152,10 @@ const ContactPage = () => {
           {/* email input field */}
           <Reveal delay={0.15}>
             <input
-              className={`outline-none border-[1px] focus:border-2 focus:rounded-md p-2 xl:w-[300px] ${
+              className={`outline-none border-[1px] focus:border-2 focus:rounded-md p-2 xl:w-[300px] bg-slate-50 dark:bg-dark-primary-blue ${
                 emailTouched && !isValidEmail
-                  ? "border-red-500"
-                  : "border-primary-blue"
+                  ? "border-red-500 dark:border-red-800"
+                  : "border-primary-blue dark:border-dark-accent-blue"
               }`}
               type="text"
               data-validation="email"
@@ -178,7 +178,7 @@ const ContactPage = () => {
           {/* phone input field -> no validation/no required */}
           <Reveal delay={0.2}>
             <input
-              className={`outline-none border-[1px] focus:border-2 focus:rounded-md p-2 xl:w-[300px] border-primary-blue`}
+              className={`outline-none border-[1px] focus:border-2 focus:rounded-md p-2 xl:w-[300px] border-primary-blue dark:border-dark-accent-blue bg-slate-50 dark:bg-dark-primary-blue `}
               type="text"
               data-validation="text"
               id="phone"
@@ -194,10 +194,10 @@ const ContactPage = () => {
           {/* message */}
           <Reveal delay={0.25}>
             <textarea
-              className={`outline-none border-[1px] focus:border-2 focus:rounded-md  p-2 resize-none xl:w-[500px] ${
+              className={`outline-none border-[1px] focus:border-2 focus:rounded-md  p-2 resize-none xl:w-[500px] bg-slate-50 dark:bg-dark-primary-blue ${
                 messageTouched && !isValidMessage
-                  ? "border-red-500"
-                  : "border-primary-blue"
+                  ? "border-red-500 dark:border-red-800"
+                  : "border-primary-blue dark:border-dark-accent-blue"
               }`}
               name="message"
               id="message"
@@ -222,7 +222,7 @@ const ContactPage = () => {
               ${
                 !isValidForm
                   ? "text-silver-grey border-silver-grey"
-                  : "text-primary-blue  border-primary-blue hover:bg-primary-blue hover:text-white hover:cursor-pointer"
+                  : "text-primary-blue dark:text-dark-accent-blue  border-primary-blue dark:border-dark-accent-blue hover:bg-primary-blue dark:hover:bg-dark-accent-blue dark:hover:text-slate-50  hover:text-white hover:cursor-pointer"
               }`}
               type="submit"
             >
@@ -232,8 +232,8 @@ const ContactPage = () => {
         </form>
         {/* Contact informations */}
         <Reveal delay={0.25}>
-          <div className="hidden md:block text-lg text-primary-blue font-bold backdrop-blur-md p-5">
-            <h2 className="font-primary font-extrabold text-accent-blue  uppercase md:text-2xl tracking-[4px] pb-5 ">
+          <div className="hidden md:block text-lg text-primary-blue dark:text-dark-text-grey font-bold backdrop-blur-md p-5">
+            <h2 className="font-primary font-extrabold text-accent-blue dark:text-silver-grey uppercase md:text-2xl tracking-[4px] pb-5 ">
               {t("contact:contact-get-in-touch")}
             </h2>
             <table>
@@ -242,7 +242,7 @@ const ContactPage = () => {
                   <td className="w-10">
                     <PiPhoneCallFill size={25} />
                   </td>
-                  <td className="pl-2 hover:scale-105 hover:text-accent-blue ease-in-out duration-300">
+                  <td className="pl-2 hover:scale-105 hover:text-accent-blue dark:hover:text-dark-accent-blue ease-in-out duration-300">
                     <a href="tel:+31648124788">+31 6 48 12 47 88</a>
                   </td>
                 </tr>
@@ -251,7 +251,7 @@ const ContactPage = () => {
                   <td className="w-10 h-10">
                     <FaWhatsappSquare size={25} />
                   </td>
-                  <td className="pl-2 hover:scale-105 hover:text-accent-blue ease-in-out duration-300">
+                  <td className="pl-2 hover:scale-105 hover:text-accent-blue dark:hover:text-dark-accent-blue ease-in-out duration-300">
                     <a href="https://wa.me/31648124788">+31 6 48 12 47 88</a>
                   </td>
                 </tr>
@@ -259,7 +259,7 @@ const ContactPage = () => {
                   <td>
                     <MdEmail size={25} />
                   </td>
-                  <td className="pl-2 hover:scale-105 hover:text-accent-blue ease-in-out duration-300">
+                  <td className="pl-2 hover:scale-105 hover:text-accent-blue dark:hover:text-dark-accent-blue ease-in-out duration-300">
                     <a href="mailto:contact@shipdesignengineering.com">
                       contact@shipdesignengineering.com
                     </a>
@@ -269,11 +269,11 @@ const ContactPage = () => {
             </table>
 
             <div className="flex items-center gap-5">
-              <span className="text-lg text-primary-blue font-bold">
+              <span className="text-lg  font-bold">
                 {t("contact:contact-socials")}:{" "}
               </span>
               <a href="https://www.linkedin.com/">
-                <FaLinkedin className="hover:cursor-pointer hover:scale-125 hover:text-accent-blue ease-in-out duration-300" />
+                <FaLinkedin className="hover:cursor-pointer hover:scale-125 hover:text-accent-blue dark:hover:text-dark-accent-blue ease-in-out duration-300" />
               </a>
             </div>
           </div>

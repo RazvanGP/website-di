@@ -12,7 +12,7 @@ const ServiceDetails = ({ params }) => {
   const { t } = useTranslation();
 
   return (
-    <main className="flex-1 self-center relative max-w-[350px] md:max-w-2xl lg:max-w-5xl flex flex-col justify-center items-start gap-5 font-secondary text-text-grey text-2xl">
+    <main className="pt-36 relative flex-1 self-center max-w-[350px] md:max-w-2xl lg:max-w-5xl flex flex-col justify-center items-start gap-5 font-secondary text-text-grey dark:text-dark-text-grey text-2xl">
       <Lines />
       <Reveal>
         <TopBanner
@@ -25,8 +25,8 @@ const ServiceDetails = ({ params }) => {
       </Reveal>
 
       <Reveal delay={0.15}>
-        <p className="font-semibold">
-          <span className="text-accent-blue ">
+        <p className="font-semibold dark:text-dark-text-grey">
+          <span className="text-accent-blue dark:text-dark-accent-blue">
             {t(`services:service-page.item-${serviceId}.service-details-acc`)}
           </span>
           {t(`services:service-page.item-${serviceId}.service-details`)}
@@ -40,7 +40,7 @@ const ServiceDetails = ({ params }) => {
               <div className="flex flex-col gap-4 pl-4">
                 <div className="flex">
                   <BulletPoint />
-                  <span className="ml-4">
+                  <span className="ml-4 dark:text-dark-accent-blue">
                     {/* {item} */}
                     {t(
                       `services:service-page.item-${serviceId}.list.item-${index}`

@@ -10,12 +10,12 @@ const AboutPage = () => {
   const itemsArr = ["leadership", "MSc", "BSc", "welder"];
 
   return (
-    <main className="p-10 relative flex-1 flex flex-col justify-center items-center max-w-6xl self-center">
+    <main className="pt-36 p-10 relative flex-1 flex flex-col justify-center items-center max-w-6xl self-center">
       <Lines />
 
       <Reveal>
-        <p className="font-semibold pb-10 font-secondary text-text-grey text-2xl self-start">
-          <span className="text-accent-blue ">
+        <p className="font-semibold pb-10 font-secondary text-text-grey dark:text-dark-text-grey text-2xl self-start">
+          <span className="text-accent-blue dark:text-dark-accent-blue">
             {t("about:about-text-acc-1")}
           </span>
           {t("about:about-text-1")}
@@ -29,14 +29,14 @@ const AboutPage = () => {
             size={400}
             className="opacity-5 absolute -left-5 -bottom-10 -rotate-12"
           />
-          <p className="font-semibold pb-10 font-secondary text-text-grey text-2xl self-start">
-            <span className="text-accent-blue ">
+          <p className="font-semibold pb-10 font-secondary text-text-grey dark:text-dark-text-grey text-2xl self-start">
+            <span className="text-accent-blue dark:text-dark-accent-blue">
               {t("about:about-text-acc-2")}
             </span>
             {t("about:about-text-2")}
           </p>
 
-          <div className="flex flex-col gap-2 pl-4 font-secondary text-text-grey text-xl font-semibold">
+          <div className="flex flex-col gap-2 pl-4 font-secondary text-text-grey dark:text-dark-text-grey text-xl font-semibold">
             {itemsArr.map((item, index) => {
               return (
                 <Reveal delay={0.2 + 0.05 * index} key={index}>
