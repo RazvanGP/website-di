@@ -65,11 +65,11 @@ const Nav = () => {
         <img src="/logo.png" alt="" width={100} />
       </Link>
 
-      <ul className="hidden md:flex justify-between pr-5 gap-5 ">
+      <ul className="hidden md:flex justify-between gap-5 ">
         {navItems?.map((item, index) => (
           <li
             key={index}
-            className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300 uppercase dark:text-dark-accent-blue dark:hover:text-white"
+            className="pr-2 hover:text-accent-blue hover:scale-110 ease-in-out duration-300 uppercase dark:text-dark-accent-blue dark:hover:text-slate-50"
           >
             <Link
               href={`/${index === 0 ? "/" : item.split("-")[1]}`}
@@ -84,7 +84,7 @@ const Nav = () => {
         ))}
       </ul>
 
-      <div className="absolute flex gap-5 right-8 md:right-14 top-20">
+      <div className="absolute flex gap-5 right-10 md:right-16 top-20">
         <DarkModeToggleBtn />
         <LanguageChanger />
       </div>
@@ -102,7 +102,7 @@ const Nav = () => {
           className={`min-w-[30px] bg-silver-grey min-h-[2px] ${
             showMobileNav
               ? "group-hover:bg-accent-red"
-              : "group-hover:bg-accent-blue"
+              : "group-hover:bg-accent-blue dark:group-hover:bg-dark-accent-blue"
           }`}
         ></motion.div>
         {!showMobileNav && (
@@ -110,7 +110,7 @@ const Nav = () => {
             className={`min-w-[20px] bg-silver-grey min-h-[2px] ${
               showMobileNav
                 ? "group-hover:bg-accent-red"
-                : "group-hover:bg-accent-blue"
+                : "group-hover:bg-accent-blue dark:group-hover:bg-dark-accent-blue"
             }`}
           ></div>
         )}
@@ -121,7 +121,7 @@ const Nav = () => {
           className={`min-w-[30px] bg-silver-grey min-h-[2px] ${
             showMobileNav
               ? "group-hover:bg-accent-red"
-              : "group-hover:bg-accent-blue"
+              : "group-hover:bg-accent-blue dark:group-hover:bg-dark-accent-blue"
           }`}
         ></motion.div>
       </motion.button>

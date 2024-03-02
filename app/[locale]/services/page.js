@@ -29,6 +29,7 @@ const ServicesPage = () => {
                       <Image
                         src={service.imgSrc}
                         fill
+                        sizes="280px"
                         alt="service image"
                         className="object-cover"
                         loading="lazy"

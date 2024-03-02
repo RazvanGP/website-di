@@ -34,6 +34,7 @@ const PortfolioPage = () => {
                       <Image
                         src={project.imgSrc}
                         fill
+                        sizes="280px"
                         alt="project image"
                         className="object-cover"
                         loading="lazy"

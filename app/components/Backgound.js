@@ -61,7 +61,8 @@ const Backgound = () => {
                 src={`/bg-${index}.png`}
                 fill={true}
                 className="object-contain"
-                loading="lazy"
+                priority
+                alt={`background image step ${index}`}
               ></Image>
             </motion.div>
           );
