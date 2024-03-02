@@ -7,16 +7,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";
 import useWindowSize from "./useWindowSize";
-import { Context } from "./Context";
-import { useContext } from "react";
 
 import { useTranslation } from "react-i18next";
+import { useTheme } from "next-themes";
 
 const CardModal = ({ handleCardModal, currentCard }) => {
   const windowSize = useWindowSize();
-
   const { t } = useTranslation();
-  const darkMode = useContext(Context);
+  const { resolvedTheme } = useTheme();
 
   const swiperPaginationStyles = {
     light: {
@@ -28,7 +26,7 @@ const CardModal = ({ handleCardModal, currentCard }) => {
   };
 
   const swiperPaginationColor =
-    darkMode.darkMode === true
+    resolvedTheme === "dark"
       ? swiperPaginationStyles.dark
       : swiperPaginationStyles.light;
 

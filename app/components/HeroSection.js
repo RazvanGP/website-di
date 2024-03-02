@@ -1,12 +1,6 @@
-import {
-  motion,
-  useScroll,
-  useMotionValueEvent,
-  useInView,
-  useAnimation,
-} from "framer-motion";
-import { Context } from "./Context";
-import { useContext, useState, useRef } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+
+import { useState } from "react";
 import Link from "next/link";
 import { PiQuotesThin } from "react-icons/pi";
 import Reveal from "./Reveal";
@@ -19,7 +13,6 @@ const HeroSection = () => {
 
   const { t } = useTranslation();
 
-  const darkMode = useContext(Context);
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrollYSection(latest);
   });
@@ -38,16 +31,16 @@ const HeroSection = () => {
             <Reveal delay={0.35}>
               <div className="flex flex-col w-[100%]">
                 <PiQuotesThin
-                  color={darkMode === true ? "#283260" : "#acacac"}
-                  className="w-[50px] h-[50px]"
+                  size={50}
+                  className="dark:fill-silver-grey fill-primary-blue"
                 />
                 <p className="text-4xl md:text-6xl lg:text-8xl text-primary-blue dark:text-silver-grey font-black flex flex-col gap-5">
                   <span>{t("hero-motto-1")}</span>
                   <span className="text-end">{t("hero-motto-2")}</span>
                 </p>
                 <PiQuotesThin
-                  color={darkMode === true ? "#283260" : "#acacac"}
-                  className="w-[50px] h-[50px] self-end"
+                  size={50}
+                  className="dark:fill-silver-grey fill-primary-blue self-end"
                 />
               </div>
             </Reveal>

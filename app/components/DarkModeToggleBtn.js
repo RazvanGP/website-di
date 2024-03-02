@@ -1,5 +1,4 @@
 "use client";
-import { BsMoonStars, BsSun } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -9,22 +8,14 @@ const DarkModeToggleBtn = () => {
 
   useEffect(() => setMounted(true), []);
 
-  const handleDark = () => {
-    setTheme("dark");
-  };
-
-  const handleLight = () => {
-    setTheme("light");
-  };
-
   return (
     <>
       <button
         onClick={() => setTheme("dark")}
-        className="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+        className=" block dark:hidden h-4 w-4 hover:scale-110 ease-in-out duration-300"
       >
         <svg
-          className="fill-[#2E84FF] block dark:hidden"
+          className="fill-[#2E84FF] "
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -33,10 +24,10 @@ const DarkModeToggleBtn = () => {
       </button>
       <button
         onClick={() => setTheme("light")}
-        className="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+        className="hidden dark:block h-4 w-4 hover:scale-110 ease-in-out duration-300"
       >
         <svg
-          className="fill-[#2c7da0] hidden dark:block"
+          className="fill-[#2c7da0] "
           fill="currentColor"
           viewBox="0 0 20 20"
         >

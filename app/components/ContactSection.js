@@ -1,24 +1,14 @@
-import React, { useEffect, useState } from "react";
-import BulletPoint from "./BulletPoint";
-import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 import Link from "next/link";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import { Context } from "./Context";
-import { useContext } from "react";
 
 import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
   const { t } = useTranslation();
-  const darkMode = useContext(Context);
-
-  useEffect(() => {
-    console.log(darkMode.darkMode);
-  }, [darkMode]);
 
   return (
     <Reveal>
@@ -44,9 +34,7 @@ const ContactSection = () => {
                   <td className="w-10">
                     <PiPhoneCallFill
                       size={25}
-                      color={`${
-                        darkMode.darkMode === true ? "#101935" : "#283260"
-                      }`}
+                      className="dark:fill-dark-text-grey fill-text-grey"
                     />
                   </td>
                   <td className="pl-2 hover:scale-105 hover:text-accent-blue dark:hover:text-dark-accent-blue ease-in-out duration-300">
@@ -58,9 +46,7 @@ const ContactSection = () => {
                   <td className="w-10 h-10">
                     <FaWhatsappSquare
                       size={25}
-                      color={`${
-                        darkMode.darkMode === true ? "#101935" : "#283260"
-                      }`}
+                      className="dark:fill-dark-text-grey fill-text-grey"
                     />
                   </td>
                   <td className="pl-2 hover:scale-105 hover:text-accent-blue dark:hover:text-dark-accent-blue ease-in-out duration-300">
@@ -71,9 +57,7 @@ const ContactSection = () => {
                   <td>
                     <MdEmail
                       size={25}
-                      color={`${
-                        darkMode.darkMode === true ? "#101935" : "#283260"
-                      }`}
+                      className="dark:fill-dark-text-grey fill-text-grey"
                     />
                   </td>
                   <td className="pl-2 hover:scale-105 hover:text-accent-blue dark:hover:text-dark-accent-blue ease-in-out duration-300">

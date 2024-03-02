@@ -8,7 +8,6 @@ import Image from "next/image";
 const Backgound = () => {
   const { t } = useTranslation();
   const { scrollYValue } = useContext(Context);
-  const darkMode = useContext(Context);
 
   const [opacityBg0, setOpacityBg0] = useState(0);
   const [opacityBg1, setOpacityBg1] = useState(0);
@@ -86,7 +85,7 @@ const Backgound = () => {
           >
             <IoIosArrowDropdown
               size={50}
-              color={`${darkMode ? "#2c7da0" : "#2E84FF"}`}
+              className="dark:fill-dark-accent-blue fill-accent-blue"
             />
             <p className="text-xs uppercase dark:text-silver-grey">
               {t("common:bg-scroll")}
@@ -95,7 +94,7 @@ const Backgound = () => {
         ) : (
           <IoIosArrowDropleft
             size={50}
-            color={`${darkMode ? "#2c7da0" : "#2E84FF"}`}
+            className="dark:fill-dark-accent-blue fill-accent-blue"
           />
         )}
       </div>
