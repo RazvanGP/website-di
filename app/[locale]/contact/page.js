@@ -117,7 +117,7 @@ const ContactPage = () => {
   return (
     <>
       <Lines />
-      <main className="flex-1 relative max-w-6xl self-center flex items-center gap-20">
+      <main className="pt-36 flex-1 relative max-w-6xl self-center flex items-center gap-20">
         <form
           onSubmit={handleSubmit}
           id="contact=form"
