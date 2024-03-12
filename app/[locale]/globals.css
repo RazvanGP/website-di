@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+html {
+  /* scroll-snap-type: y mandatory; */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  height: 100%;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .grabbing:hover {
+    cursor: grabbing;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 100px;
+  }
+
+  /* .swiper-button-next {
+    margin-right: 50px;
+    padding: 40px;
+    border-radius: 100%;
+    background-color: rgba(245, 245, 245, 0.2);
+  }
+
+  .swiper-button-next:hover {
+    scale: 1.2;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .swiper-button-prev {
+    margin-left: 50px;
+    padding: 40px;
+    border-radius: 100%;
+    background-color: rgba(245, 245, 245, 0.2);
+  }
+
+  .swiper-button-prev:hover {
+    scale: 1.2;
+    transition: all 0.3s ease-in-out;
+  } */
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl font-primary;
+  }
+}
+
+@layer components {
+  .home-section {
+    @apply relative max-w-[350px] md:max-w-2xl lg:max-w-5xl font-primary text-text-grey;
+    /* border-2 border-red-500 */
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "contact-btn-send": "Send message",
+  "contact-err-email": "Please enter a valid email address.",
+  "contact-err-name": "Please enter a valid name.",
+  "contact-get-in-touch": "get in touch",
+  "contact-placeholder-email": "Email",
+  "contact-placeholder-message": "Message",
+  "contact-placeholder-name": "Name",
+  "contact-placeholder-phone": "Phone",
+  "contact-socials": "Socials",
+  "contact-dialog-acc": "Your message has been successfully sent!",
+  "contact-dialog-text": "Thank you for reaching out. We'll be in touch with you shortly.",
+  "contact-dialog-btn": "close"
+}

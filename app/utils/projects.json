@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "imgSrc": "/project0.jpg",
+    "title": "Amels 60",
+    "page": "https://www.amelsyachting.com/portfolio/amels-60"
+  },
+  {
+    "id": 1,
+    "imgSrc": "/project1.jpg",
+    "title": "Arrow ",
+    "page": "https://www.feadship.nl/fleet/arrow"
+  },
+  {
+    "id": 2,
+    "imgSrc": "/project2.jpeg",
+    "title": "Feadship 1010",
+    "page": "https://www.superyachttimes.com/yachts/feadship-1010"
+  },
+  {
+    "id": 3,
+    "imgSrc": "/project3.jpg",
+    "title": "MAD 3500",
+    "page": "https://www.damen.com/insights-center/news/damens-second-mad-3500-enters-service"
+  },
+  {
+    "id": 4,
+    "imgSrc": "/project4.jpg",
+    "title": "VARD 9 01",
+    "page": "https://www.vard.com/ship-design/vard-9-series/vard-9-01-mid-size-dual-function-vessel"
+  },
+  {
+    "id": 5,
+    "imgSrc": "/project5.jpeg",
+    "title": "OPV 2600",
+    "page": "https://www.damen.com/vessels/defence-and-security/opv/offshore-patrol-vessel-2600-military"
+  }
+]
